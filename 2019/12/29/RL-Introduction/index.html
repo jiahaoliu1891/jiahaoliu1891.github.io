@@ -54,8 +54,8 @@
 <meta property="og:description" content="This is a very first introduction to Reinforcement Learning, which mainly refers to UCL RL course given by David Silver and the book Reinforcement Learning An Introduction by Sutton. Here are some use">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://pic2.zhimg.com/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg">
-<meta property="article:published_time" content="2019-12-30T05:00:48.000Z">
-<meta property="article:modified_time" content="2019-12-30T06:51:25.353Z">
+<meta property="article:published_time" content="2019-12-29T13:00:48.000Z">
+<meta property="article:modified_time" content="2019-12-30T07:30:53.050Z">
 <meta property="article:author" content="jiahaoliu1891">
 <meta property="article:tag" content="Reinforcement Learning">
 <meta name="twitter:card" content="summary">
@@ -209,10 +209,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2019-12-29 21:00:48 / Modified: 22:51:25" itemprop="dateCreated datePublished" datetime="2019-12-29T21:00:48-08:00">2019-12-29</time>
+              <time title="Created: 2019-12-29 21:00:48" itemprop="dateCreated datePublished" datetime="2019-12-29T21:00:48+08:00">2019-12-29</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-12-30 15:30:53" itemprop="dateModified" datetime="2019-12-30T15:30:53+08:00">2019-12-30</time>
+              </span>
 
           
 
@@ -232,11 +238,11 @@
 <img src="https://pic2.zhimg.com/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg" alt="强化学习(/Users/leo/Desktop/typroa_img/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg)--基本概念" style="zoom: 50%;" />
 
 <p>where <strong>Agent</strong>  take (orsay output) <em>Action</em> $A_t$ depending on the <em>State</em> $S_t$ at time step $t$. The <strong>Environment</strong> decides the next <em>State</em> $S_{t+1}$ given the current <em>State</em> $S_t$  and <em>Action</em> $A_t$ .  Meanwhile, it send the <strong>Agent</strong> a <em>Reward</em> $R_t$. </p>
-<p>The <strong>Core Question</strong> for Reinforcement Learning is :<br>“ How should the <strong>Agent</strong> react to the <strong>Environment</strong>? “<br>Formally, this is to ask the <strong>Agent</strong> to select an optimal <em>Policy</em> $π(a|s)$.</p>
+<p>The <strong>Core Question</strong> for Reinforcement Learning is :<br>“ How should the <strong>Agent</strong> react to the <strong>Environment</strong>? “<br>Formally, this is to ask the <strong>Agent</strong> to learn an <strong>optimal</strong> ==<em>Policy</em> $π_*(a|s)$.==</p>
 <p>To answer this question, we divide it to a few smaller problems:</p>
 <p><strong>Q1:</strong> How to mathematically model the interaction between <strong>Agent</strong> and <strong>Environment</strong> ?<br>    <strong>A1:</strong> Markov Processes → Markov Reward Processes → Markov Decision Processes (MDP)</p>
-<p><strong>Q2:</strong> How to solve Markov Decision Processes ?<br>    <strong>Q2.1:</strong> How to evaluate each <em>State</em> $S$ and each <em>Action</em> $A$.<br>    Formally, how to compute the value $v(s) \in R$ for <em>State</em> $s$, where $v(s)$ is a real number that shows<br>    <em>how good</em> is a <em>State</em> $S$ ? Similarly, $q(s,a)$ for <em>Action</em> $a$.<br>        <strong>A2.1:</strong> Bellman <em>Expectation</em> Equations<br>    <strong>Q2.2:</strong> Given $v(s)$, what’s the best <em>Policy</em> $π(a|s)$?<br>        <strong>A2.2:</strong>  Bellman <em>Optimality</em> Equations </p>
-<p><strong>Q3:</strong> Bellman Optimality Equations has <strong>NO</strong> closed form solutions, how to solve it?<br>    <strong>Q3.1: ** Suppose we know the MDP:<br>        **A3.1</strong>: Dynamic Programming (DP) method.<br>    <strong>Q3.2:</strong> Suppose we do not know the MDP:<br>        <strong>A3.2:</strong> Monte Carlo (MC) and Temporal Difference (TD) method.</p>
+<p><strong>Q2:</strong> How to solve Markov Decision Processes, , i.e., finding the  <strong>optimal</strong> ==<em>Policy</em> $π<em><em>(a|s)$== ?<br>    <strong>Q2.1 Predition Problem:</strong> Given a *Policy</em> $π$, how to evaluate each <em>State</em> $S$ and each <em>Action</em> $A$?<br>    Formally, how to compute the value $v_π(s) \in R$ for <em>State</em> $s$, where $v_π(s)$ is a real number that shows<br>    <em>how good</em> is a <em>State</em> $S$ ? Similarly, $q(s,a)$ for <em>Action</em> $a$.<br>        <strong>A2.1:</strong> Bellman <em>Expectation</em> Equations (Can be directly solved)<br>    <strong>Q2.2 Control Problem:</strong>  Then, what’s the <strong>optimal</strong> ==<em>Policy</em> $π</em><em>(a|s)$== , state-value function $v_</em>(s)$ and  state-action function $q_<em>(s,a)$?<br>        <strong>A2.2:</strong>  Bellman *Optimality</em> Equations (Can not be directly solved)</p>
+<p><strong>Q3:</strong> Bellman Optimality Equations has <strong>NO</strong> trivial solutions, how to solve it efficiently?<br>    <strong>Q3.1: ** Suppose we know the MDP:<br>        **A3.1</strong>: Dynamic Programming (DP) method.<br>    <strong>Q3.2:</strong> Suppose we do not know the MDP:<br>        <strong>A3.2:</strong> Monte Carlo (MC) and Temporal Difference (TD) method.</p>
 
     </div>
 
@@ -255,7 +261,7 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/22/Lanague-and-The-World/" rel="prev" title="Lanague and The World">
+    <a href="/2019/12/23/Lanague-and-The-World/" rel="prev" title="Lanague and The World">
       <i class="fa fa-chevron-left"></i> Lanague and The World
     </a></div>
       <div class="post-nav-item"></div>
