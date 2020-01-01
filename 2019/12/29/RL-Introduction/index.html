@@ -55,7 +55,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://pic2.zhimg.com/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg">
 <meta property="article:published_time" content="2019-12-29T13:00:48.000Z">
-<meta property="article:modified_time" content="2019-12-30T07:30:53.050Z">
+<meta property="article:modified_time" content="2020-01-01T04:51:47.905Z">
 <meta property="article:author" content="jiahaoliu1891">
 <meta property="article:tag" content="Reinforcement Learning">
 <meta name="twitter:card" content="summary">
@@ -217,7 +217,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-30 15:30:53" itemprop="dateModified" datetime="2019-12-30T15:30:53+08:00">2019-12-30</time>
+                <time title="Modified: 2020-01-01 12:51:47" itemprop="dateModified" datetime="2020-01-01T12:51:47+08:00">2020-01-01</time>
               </span>
 
           
@@ -232,17 +232,17 @@
 
       
         <p>This is a very first introduction to Reinforcement Learning, which mainly refers to <em>UCL RL course</em> given by David Silver and the book <em>Reinforcement Learning An Introduction</em> by Sutton.</p>
-<p>Here are some useful resources: <a href="https://github.com/jiahaoliu1891/Reinforcement-Learning-101" target="_blank" rel="noopener">https://github.com/jiahaoliu1891/Reinforcement-Learning-101</a></p>
-<hr>
-<h3 id="Introduction-to-Basic-Ideas"><a href="#Introduction-to-Basic-Ideas" class="headerlink" title="Introduction to Basic Ideas"></a>Introduction to Basic Ideas</h3><p>Reinforcement Learning is based the following model, which shows the interaction between <strong>Agent</strong> and <strong>Environment</strong> :</p>
-<img src="https://pic2.zhimg.com/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg" alt="强化学习(/Users/leo/Desktop/typroa_img/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg)--基本概念" style="zoom: 50%;" />
-
-<p>where <strong>Agent</strong>  take (orsay output) <em>Action</em> $A_t$ depending on the <em>State</em> $S_t$ at time step $t$. The <strong>Environment</strong> decides the next <em>State</em> $S_{t+1}$ given the current <em>State</em> $S_t$  and <em>Action</em> $A_t$ .  Meanwhile, it send the <strong>Agent</strong> a <em>Reward</em> $R_t$. </p>
-<p>The <strong>Core Question</strong> for Reinforcement Learning is :<br>“ How should the <strong>Agent</strong> react to the <strong>Environment</strong>? “<br>Formally, this is to ask the <strong>Agent</strong> to learn an <strong>optimal</strong> ==<em>Policy</em> $π_*(a|s)$.==</p>
+<p>Here are some useful resources: https://github.com/jiahaoliu1891/Reinforcement-Learning-101</p>
+<hr />
+<h3 id="introduction-to-basic-ideas">Introduction to Basic Ideas</h3>
+<p>Reinforcement Learning is based on the following model, which shows the interaction between <strong>Agent</strong> and <strong>Environment</strong> :</p>
+<p><img src="https://pic2.zhimg.com/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg" alt="强化学习(/Users/leo/Desktop/typroa_img/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg)--基本概念" style="zoom: 50%;" /></p>
+<p>where <strong>Agent</strong> take (orsay output) <em>Action</em> <span class="math inline">\(A_t\)</span> depending on the <em>State</em> <span class="math inline">\(S_t\)</span> at time step <span class="math inline">\(t\)</span>. The <strong>Environment</strong> decides the next <em>State</em> <span class="math inline">\(S_{t+1}\)</span> given the current <em>State</em> <span class="math inline">\(S_t\)</span> and <em>Action</em> <span class="math inline">\(A_t\)</span> . Meanwhile, it send the <strong>Agent</strong> a <em>Reward</em> <span class="math inline">\(R_t\)</span>.</p>
+<p>The <strong>Core Question</strong> for Reinforcement Learning is : &quot; How should the <strong>Agent</strong> react to the <strong>Environment</strong>? &quot; Formally, this is to ask the <strong>Agent</strong> to learn an <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>.==</p>
 <p>To answer this question, we divide it to a few smaller problems:</p>
-<p><strong>Q1:</strong> How to mathematically model the interaction between <strong>Agent</strong> and <strong>Environment</strong> ?<br>    <strong>A1:</strong> Markov Processes → Markov Reward Processes → Markov Decision Processes (MDP)</p>
-<p><strong>Q2:</strong> How to solve Markov Decision Processes, , i.e., finding the  <strong>optimal</strong> ==<em>Policy</em> $π<em><em>(a|s)$== ?<br>    <strong>Q2.1 Predition Problem:</strong> Given a *Policy</em> $π$, how to evaluate each <em>State</em> $S$ and each <em>Action</em> $A$?<br>    Formally, how to compute the value $v_π(s) \in R$ for <em>State</em> $s$, where $v_π(s)$ is a real number that shows<br>    <em>how good</em> is a <em>State</em> $S$ ? Similarly, $q(s,a)$ for <em>Action</em> $a$.<br>        <strong>A2.1:</strong> Bellman <em>Expectation</em> Equations (Can be directly solved)<br>    <strong>Q2.2 Control Problem:</strong>  Then, what’s the <strong>optimal</strong> ==<em>Policy</em> $π</em><em>(a|s)$== , state-value function $v_</em>(s)$ and  state-action function $q_<em>(s,a)$?<br>        <strong>A2.2:</strong>  Bellman *Optimality</em> Equations (Can not be directly solved)</p>
-<p><strong>Q3:</strong> Bellman Optimality Equations has <strong>NO</strong> trivial solutions, how to solve it efficiently?<br>    <strong>Q3.1: ** Suppose we know the MDP:<br>        **A3.1</strong>: Dynamic Programming (DP) method.<br>    <strong>Q3.2:</strong> Suppose we do not know the MDP:<br>        <strong>A3.2:</strong> Monte Carlo (MC) and Temporal Difference (TD) method.</p>
+<p><strong>Q1:</strong> How to mathematically model the interaction between <strong>Agent</strong> and <strong>Environment</strong> ? <strong>A1:</strong> Markov Processes → Markov Reward Processes → Markov Decision Processes (MDP)</p>
+<p><strong>Q2:</strong> How to solve Markov Decision Processes, , i.e., finding the <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>== ? <strong>Q2.1 Predition Problem:</strong> Given a <em>Policy</em> <span class="math inline">\(π\)</span>, how to evaluate each <em>State</em> <span class="math inline">\(S\)</span> and each <em>Action</em> <span class="math inline">\(A\)</span>? Formally, how to compute the value <span class="math inline">\(v_π(s) \in R\)</span> for <em>State</em> <span class="math inline">\(s\)</span>, where <span class="math inline">\(v_π(s)\)</span> is a real number that shows <em>how good</em> is a <em>State</em> <span class="math inline">\(S\)</span> ? Similarly, <span class="math inline">\(q(s,a)\)</span> for <em>Action</em> <span class="math inline">\(a\)</span>. <strong>A2.1:</strong> Bellman <em>Expectation</em> Equations (Can be directly solved) <strong>Q2.2 Control Problem:</strong> Then, what's the <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>== , state-value function <span class="math inline">\(v_*(s)\)</span> and state-action function <span class="math inline">\(q_*(s,a)\)</span>? <strong>A2.2:</strong> Bellman <em>Optimality</em> Equations (Can not be directly solved)</p>
+<p><strong>Q3:</strong> Bellman Optimality Equations has <strong>NO</strong> trivial solutions, how to solve it efficiently? <strong>Q3.1: </strong> Suppose we know the MDP: <strong>A3.1</strong>: Dynamic Programming (DP) method. <strong>Q3.2:</strong> Suppose we do not know the MDP: <strong>A3.2:</strong> Monte Carlo (MC) and Temporal Difference (TD) method.</p>
 
     </div>
 
@@ -261,10 +261,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/23/Lanague-and-The-World/" rel="prev" title="Lanague and The World">
+    <a href="/2019/12/22/Lanague-and-The-World/" rel="prev" title="Lanague and The World">
       <i class="fa fa-chevron-left"></i> Lanague and The World
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2019/12/31/test/" rel="next" title="test">
+      test <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -324,7 +327,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction-to-Basic-Ideas"><span class="nav-number">1.</span> <span class="nav-text">Introduction to Basic Ideas</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#introduction-to-basic-ideas"><span class="nav-number">1.</span> <span class="nav-text">Introduction to Basic Ideas</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -338,7 +341,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -370,7 +373,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -428,6 +431,8 @@
 
 
 
+
+  
 
   
 

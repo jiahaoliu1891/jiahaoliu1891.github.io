@@ -180,6 +180,65 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/12/31/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jiahaoliu1891">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mind Programming">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/31/test/" class="post-title-link" itemprop="url">test</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-12-31 12:38:51 / Modified: 12:39:07" itemprop="dateCreated datePublished" datetime="2019-12-31T12:38:51+08:00">2019-12-31</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><span class="math inline">\(A_t\)</span></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/12/29/RL-Introduction/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -211,7 +270,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-12-30 15:30:53" itemprop="dateModified" datetime="2019-12-30T15:30:53+08:00">2019-12-30</time>
+                <time title="Modified: 2020-01-01 12:51:47" itemprop="dateModified" datetime="2020-01-01T12:51:47+08:00">2020-01-01</time>
               </span>
 
           
@@ -226,17 +285,17 @@
 
       
           <p>This is a very first introduction to Reinforcement Learning, which mainly refers to <em>UCL RL course</em> given by David Silver and the book <em>Reinforcement Learning An Introduction</em> by Sutton.</p>
-<p>Here are some useful resources: <a href="https://github.com/jiahaoliu1891/Reinforcement-Learning-101" target="_blank" rel="noopener">https://github.com/jiahaoliu1891/Reinforcement-Learning-101</a></p>
-<hr>
-<h3 id="Introduction-to-Basic-Ideas"><a href="#Introduction-to-Basic-Ideas" class="headerlink" title="Introduction to Basic Ideas"></a>Introduction to Basic Ideas</h3><p>Reinforcement Learning is based the following model, which shows the interaction between <strong>Agent</strong> and <strong>Environment</strong> :</p>
-<img src="https://pic2.zhimg.com/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg" alt="强化学习(/Users/leo/Desktop/typroa_img/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg)--基本概念" style="zoom: 50%;" />
-
-<p>where <strong>Agent</strong>  take (orsay output) <em>Action</em> $A_t$ depending on the <em>State</em> $S_t$ at time step $t$. The <strong>Environment</strong> decides the next <em>State</em> $S_{t+1}$ given the current <em>State</em> $S_t$  and <em>Action</em> $A_t$ .  Meanwhile, it send the <strong>Agent</strong> a <em>Reward</em> $R_t$. </p>
-<p>The <strong>Core Question</strong> for Reinforcement Learning is :<br>“ How should the <strong>Agent</strong> react to the <strong>Environment</strong>? “<br>Formally, this is to ask the <strong>Agent</strong> to learn an <strong>optimal</strong> ==<em>Policy</em> $π_*(a|s)$.==</p>
+<p>Here are some useful resources: https://github.com/jiahaoliu1891/Reinforcement-Learning-101</p>
+<hr />
+<h3 id="introduction-to-basic-ideas">Introduction to Basic Ideas</h3>
+<p>Reinforcement Learning is based on the following model, which shows the interaction between <strong>Agent</strong> and <strong>Environment</strong> :</p>
+<p><img src="https://pic2.zhimg.com/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg" alt="强化学习(/Users/leo/Desktop/typroa_img/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg)--基本概念" style="zoom: 50%;" /></p>
+<p>where <strong>Agent</strong> take (orsay output) <em>Action</em> <span class="math inline">\(A_t\)</span> depending on the <em>State</em> <span class="math inline">\(S_t\)</span> at time step <span class="math inline">\(t\)</span>. The <strong>Environment</strong> decides the next <em>State</em> <span class="math inline">\(S_{t+1}\)</span> given the current <em>State</em> <span class="math inline">\(S_t\)</span> and <em>Action</em> <span class="math inline">\(A_t\)</span> . Meanwhile, it send the <strong>Agent</strong> a <em>Reward</em> <span class="math inline">\(R_t\)</span>.</p>
+<p>The <strong>Core Question</strong> for Reinforcement Learning is : &quot; How should the <strong>Agent</strong> react to the <strong>Environment</strong>? &quot; Formally, this is to ask the <strong>Agent</strong> to learn an <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>.==</p>
 <p>To answer this question, we divide it to a few smaller problems:</p>
-<p><strong>Q1:</strong> How to mathematically model the interaction between <strong>Agent</strong> and <strong>Environment</strong> ?<br>    <strong>A1:</strong> Markov Processes → Markov Reward Processes → Markov Decision Processes (MDP)</p>
-<p><strong>Q2:</strong> How to solve Markov Decision Processes, , i.e., finding the  <strong>optimal</strong> ==<em>Policy</em> $π<em><em>(a|s)$== ?<br>    <strong>Q2.1 Predition Problem:</strong> Given a *Policy</em> $π$, how to evaluate each <em>State</em> $S$ and each <em>Action</em> $A$?<br>    Formally, how to compute the value $v_π(s) \in R$ for <em>State</em> $s$, where $v_π(s)$ is a real number that shows<br>    <em>how good</em> is a <em>State</em> $S$ ? Similarly, $q(s,a)$ for <em>Action</em> $a$.<br>        <strong>A2.1:</strong> Bellman <em>Expectation</em> Equations (Can be directly solved)<br>    <strong>Q2.2 Control Problem:</strong>  Then, what’s the <strong>optimal</strong> ==<em>Policy</em> $π</em><em>(a|s)$== , state-value function $v_</em>(s)$ and  state-action function $q_<em>(s,a)$?<br>        <strong>A2.2:</strong>  Bellman *Optimality</em> Equations (Can not be directly solved)</p>
-<p><strong>Q3:</strong> Bellman Optimality Equations has <strong>NO</strong> trivial solutions, how to solve it efficiently?<br>    <strong>Q3.1: ** Suppose we know the MDP:<br>        **A3.1</strong>: Dynamic Programming (DP) method.<br>    <strong>Q3.2:</strong> Suppose we do not know the MDP:<br>        <strong>A3.2:</strong> Monte Carlo (MC) and Temporal Difference (TD) method.</p>
+<p><strong>Q1:</strong> How to mathematically model the interaction between <strong>Agent</strong> and <strong>Environment</strong> ? <strong>A1:</strong> Markov Processes → Markov Reward Processes → Markov Decision Processes (MDP)</p>
+<p><strong>Q2:</strong> How to solve Markov Decision Processes, , i.e., finding the <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>== ? <strong>Q2.1 Predition Problem:</strong> Given a <em>Policy</em> <span class="math inline">\(π\)</span>, how to evaluate each <em>State</em> <span class="math inline">\(S\)</span> and each <em>Action</em> <span class="math inline">\(A\)</span>? Formally, how to compute the value <span class="math inline">\(v_π(s) \in R\)</span> for <em>State</em> <span class="math inline">\(s\)</span>, where <span class="math inline">\(v_π(s)\)</span> is a real number that shows <em>how good</em> is a <em>State</em> <span class="math inline">\(S\)</span> ? Similarly, <span class="math inline">\(q(s,a)\)</span> for <em>Action</em> <span class="math inline">\(a\)</span>. <strong>A2.1:</strong> Bellman <em>Expectation</em> Equations (Can be directly solved) <strong>Q2.2 Control Problem:</strong> Then, what's the <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>== , state-value function <span class="math inline">\(v_*(s)\)</span> and state-action function <span class="math inline">\(q_*(s,a)\)</span>? <strong>A2.2:</strong> Bellman <em>Optimality</em> Equations (Can not be directly solved)</p>
+<p><strong>Q3:</strong> Bellman Optimality Equations has <strong>NO</strong> trivial solutions, how to solve it efficiently? <strong>Q3.1: </strong> Suppose we know the MDP: <strong>A3.1</strong>: Dynamic Programming (DP) method. <strong>Q3.2:</strong> Suppose we do not know the MDP: <strong>A3.2:</strong> Monte Carlo (MC) and Temporal Difference (TD) method.</p>
 
       
     </div>
@@ -256,7 +315,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/12/23/Lanague-and-The-World/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/12/22/Lanague-and-The-World/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -270,7 +329,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2019/12/23/Lanague-and-The-World/" class="post-title-link" itemprop="url">Lanague and The World</a>
+            <a href="/2019/12/22/Lanague-and-The-World/" class="post-title-link" itemprop="url">Lanague and The World</a>
         </h1>
 
         <div class="post-meta">
@@ -280,7 +339,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2019-12-23 09:13:13" itemprop="dateCreated datePublished" datetime="2019-12-23T09:13:13+08:00">2019-12-23</time>
+              <time title="Created: 2019-12-22 17:13:13" itemprop="dateCreated datePublished" datetime="2019-12-22T17:13:13+08:00">2019-12-22</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -301,52 +360,59 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Nowadays Deep Learning models (such as Bert) have largely promoted the development of Natural Language Processing. The main idea is to learn language model from large corpus. Despite the great success on many different NLP tasks, such as QA, deep learning models still fail to really <strong>understand</strong> human language. The thought experiment <a href="https://en.wikipedia.org/wiki/Chinese_room" target="_blank" rel="noopener">“Chinese Room”</a> tells why.</p>
-<p>In my opinion, people learn language by understanding the world. In human’s mind, we have a model for language, and also a model for the physical and mental world. Just as the introduction of Knowledge Graph from Google:</p>
-<blockquote>
-<p>“things not strings”.</p>
-</blockquote>
+          <p>Nowadays Deep Learning models (such as Bert) have largely promoted the development of Natural Language Processing. The main idea is to learn language model from large corpus. Despite the great success on many different NLP tasks, such as QA, deep learning models still fail to really <strong>understand</strong> human language. The thought experiment <a href="https://en.wikipedia.org/wiki/Chinese_room" target="_blank" rel="noopener">&quot;Chinese Room&quot;</a> tells why.</p>
+<p>In my opinion, people learn language by understanding the world. In human's mind, we have a model for language, and also a model for the physical and mental world. Just as the introduction of Knowledge Graph from Google: &gt;&quot;things not strings&quot;.</p>
 <p>Generally speaking, learning a language is equivalent to developing a understanding of the world. <strong>Grounding</strong> symbols into real world objects is a prerequisite for natural language understanding, which is a step towards human-level intelligence or say AGI.</p>
 <p><em>Key words</em>: Symbolic Grounding, Natural Language Grounding, World Model, Embodied Learning, Cognitive Linguistic</p>
-<h3 id="Papers"><a href="#Papers" class="headerlink" title="Papers:"></a>Papers:</h3><h4 id="Language-Grounding-in-Virtual-World"><a href="#Language-Grounding-in-Virtual-World" class="headerlink" title="Language Grounding in Virtual World"></a>Language Grounding in Virtual World</h4><ul>
+<h3 id="papers">Papers:</h3>
+<h4 id="language-grounding-in-virtual-world">Language Grounding in Virtual World</h4>
+<ul>
 <li><a href="https://research.fb.com/publications/why-build-an-assistant-in-minecraft/" target="_blank" rel="noopener"><strong>Why Build an Assistant in Minecraft?</strong></a></li>
 <li><a href="https://arxiv.org/pdf/1810.08272.pdf" target="_blank" rel="noopener"><strong>BabyAI: First Steps Towards Grounding Language Learning With A Human In The Loop</strong></a></li>
 <li><a href="https://apps.dtic.mil/dtic/tr/fulltext/u2/a289894.pdf" target="_blank" rel="noopener"><strong>A Computational Theory of Grounding in Natural Language Conversation</strong></a></li>
 <li><a href="https://arxiv.org/pdf/1912.05877.pdf" target="_blank" rel="noopener"><strong>Extending Machine Language Models toward Human-Level Language Understanding</strong></a></li>
 </ul>
-<h4 id="Visual-Question-Answering-Multimodal-ML"><a href="#Visual-Question-Answering-Multimodal-ML" class="headerlink" title="Visual Question Answering / Multimodal ML"></a>Visual Question Answering / Multimodal ML</h4><ul>
+<h4 id="visual-question-answering-multimodal-ml">Visual Question Answering / Multimodal ML</h4>
+<ul>
 <li><a href="https://www.aclweb.org/anthology/N16-1019.pdf" target="_blank" rel="noopener"><strong>Grounded Semantic Role Labeling</strong></a></li>
 <li><a href=""><strong>Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding</strong></a></li>
 <li><a href="https://arxiv.org/pdf/1904.11574.pdf" target="_blank" rel="noopener"><strong>TVQA+: Spatio-Temporal Grounding for Video Question Answering</strong></a></li>
 <li><a href="https://visualgenome.org" target="_blank" rel="noopener"><strong>Visual Genome</strong></a></li>
 </ul>
-<h4 id="Neural-Symbolic-Methods"><a href="#Neural-Symbolic-Methods" class="headerlink" title="Neural-Symbolic Methods"></a>Neural-Symbolic Methods</h4><ul>
+<h4 id="neural-symbolic-methods">Neural-Symbolic Methods</h4>
+<ul>
 <li><a href="https://arxiv.org/pdf/1609.05518.pdf" target="_blank" rel="noopener"><strong>Towards Deep Symbolic Reinforcement Learning</strong></a></li>
 </ul>
-<h4 id="Compositional-and-disentangled-representations"><a href="#Compositional-and-disentangled-representations" class="headerlink" title="Compositional and disentangled representations"></a>Compositional and disentangled representations</h4><ul>
+<h4 id="compositional-and-disentangled-representations">Compositional and disentangled representations</h4>
+<ul>
 <li><a href="https://www.sciencedirect.com/science/article/pii/S2352154618301943" target="_blank" rel="noopener"><strong>Reconciling deep learning with symbolic artiﬁcial intelligence: representing objects and relations</strong></a></li>
 <li><a href="https://pdfs.semanticscholar.org/a902/26c41b79f8b06007609f39f82757073641e2.pdf" target="_blank" rel="noopener"><strong>β-VAE: LEARNING BASIC VISUAL CONCEPTS WITH A CONSTRAINED VARIATIONAL FRAMEWORK</strong></a></li>
 </ul>
-<h4 id="Cognitive-Science"><a href="#Cognitive-Science" class="headerlink" title="Cognitive Science"></a>Cognitive Science</h4><ul>
+<h4 id="cognitive-science">Cognitive Science</h4>
+<ul>
 <li><a href="https://eprints.soton.ac.uk/250382/1/symgro.pdf" target="_blank" rel="noopener"><strong>THE SYMBOL GROUNDING PROBLEM</strong></a></li>
 <li><a href="https://plato.stanford.edu/entries/modularity-mind/#WhatMentModu" target="_blank" rel="noopener"><strong>Modularity of Mind</strong></a></li>
 <li><a href="http://www.subcortex.com/PrinzModularity.pdf" target="_blank" rel="noopener"><strong>Is the mind really modular?</strong></a></li>
 <li><a href="https://arxiv.org/pdf/1604.00289.pdf" target="_blank" rel="noopener"><strong>Building Machines That Learn and Think Like People</strong></a></li>
 </ul>
-<h3 id="Courses"><a href="#Courses" class="headerlink" title="Courses:"></a>Courses:</h3><ul>
+<h3 id="courses">Courses:</h3>
+<ul>
 <li><a href="https://katefvision.github.io/LanguageGrounding/#readings" target="_blank" rel="noopener"><strong>Language Grounding to Vision and Control</strong></a></li>
 <li><a href="https://www.cs.utexas.edu/~mooney/gnlp/" target="_blank" rel="noopener"><strong>Grounded Natural Language Processing</strong></a></li>
 <li><a href="http://www.cs.unc.edu/~mbansal/teaching/robonlp-seminar-spring17.html" target="_blank" rel="noopener"><strong>Grounded Language for Robotics</strong></a></li>
 <li><a href="https://www.bilibili.com/video/av33658267/?spm_id_from=333.788.videocard.12" target="_blank" rel="noopener"><strong>乔治·莱考夫认知语言学十讲</strong></a></li>
 </ul>
-<h3 id="Books"><a href="#Books" class="headerlink" title="Books:"></a>Books:</h3><ul>
+<h3 id="books">Books:</h3>
+<ul>
 <li><strong>Metaphors We Live by</strong></li>
 </ul>
-<h3 id="Workshops"><a href="#Workshops" class="headerlink" title="Workshops:"></a>Workshops:</h3><ul>
+<h3 id="workshops">Workshops:</h3>
+<ul>
 <li><a href="https://www.visionmeetscognition.org" target="_blank" rel="noopener"><strong>Vision Meets Cognition</strong></a></li>
 <li><a href="https://sites.google.com/view/continual2018/home" target="_blank" rel="noopener"><strong>Continual learning Workshop</strong></a></li>
 </ul>
-<h3 id="Web"><a href="#Web" class="headerlink" title="Web:"></a>Web:</h3><ul>
+<h3 id="web">Web:</h3>
+<ul>
 <li><a href="https://www.jiqizhixin.com/articles/2016-05-07-3" target="_blank" rel="noopener"><strong>人工智能若想取得突破，需要认知科学和工程学的联姻</strong></a></li>
 <li><a href="https://www.yangzhiping.com/info/resources.html" target="_blank" rel="noopener"><strong>计算认知科学优质资源</strong></a> <strong><em>(IMPORTANT!)</em></strong></li>
 <li><a href="https://neu-reality.com" target="_blank" rel="noopener"><strong>Neureality</strong></a></li>
@@ -354,14 +420,17 @@
 <li><a href="https://www.youtube.com/watch?v=rTawFwUvnLE" target="_blank" rel="noopener"><strong>What is wrong with convolutional neural nets</strong></a></li>
 <li><a href="https://www.bilibili.com/video/av67433567/" target="_blank" rel="noopener"><strong>构建AGI的系统神经科学方法 Demis Hassabis</strong></a></li>
 </ul>
-<h3 id="Tutorial"><a href="#Tutorial" class="headerlink" title="Tutorial:"></a>Tutorial:</h3><ul>
+<h3 id="tutorial">Tutorial:</h3>
+<ul>
 <li><a href="https://slideslive.com/38917403/causal-inference-and-stable-learning" target="_blank" rel="noopener"><strong>ICML 2019 Causality</strong></a></li>
 <li><a href="https://www.youtube.com/watch?v=FtUbMG3rlFs" target="_blank" rel="noopener"><strong>FROM SYSTEM 1 DEEP LEARNING TO SYSTEM 2 DEEP LEARNING</strong></a></li>
 </ul>
-<h3 id="Tasks"><a href="#Tasks" class="headerlink" title="Tasks:"></a>Tasks:</h3><ul>
+<h3 id="tasks">Tasks:</h3>
+<ul>
 <li><a href="https://vlomonaco.github.io/core50/" target="_blank" rel="noopener"><strong>Continual Learning and Object Recognition, Detection, Segmentation</strong></a></li>
 </ul>
-<h3 id="Active-Researchers"><a href="#Active-Researchers" class="headerlink" title="Active Researchers:"></a>Active Researchers:</h3><ul>
+<h3 id="active-researchers">Active Researchers:</h3>
+<ul>
 <li><a href="https://georgelakoff.com" target="_blank" rel="noopener">George Lakoff</a> (UCB)</li>
 <li><a href="http://www.cs.unc.edu/~mbansal/prospective-students.html" target="_blank" rel="noopener">Mohit Bansal</a> (UNC)</li>
 <li><a href="https://igorlabutov.com" target="_blank" rel="noopener">Igor Labutov</a> (LAER AI)</li>
@@ -457,7 +526,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -489,7 +558,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -547,6 +616,8 @@
 
 
 
+
+  
 
   
 
