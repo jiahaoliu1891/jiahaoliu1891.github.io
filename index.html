@@ -180,147 +180,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/12/31/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/31/test/" class="post-title-link" itemprop="url">test</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-12-31 12:38:51" itemprop="dateCreated datePublished" datetime="2019-12-31T12:38:51+08:00">2019-12-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-02 16:35:45" itemprop="dateModified" datetime="2020-10-02T16:35:45+08:00">2020-10-02</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>This is a test; Xiao Kang Tai is a pig;</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/12/29/RL-Introduction/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/29/RL-Introduction/" class="post-title-link" itemprop="url">RL 01-Introduction</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2019-12-29 21:00:48" itemprop="dateCreated datePublished" datetime="2019-12-29T21:00:48+08:00">2019-12-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-01-01 12:51:47" itemprop="dateModified" datetime="2020-01-01T12:51:47+08:00">2020-01-01</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>This is a very first introduction to Reinforcement Learning, which mainly refers to <em>UCL RL course</em> given by David Silver and the book <em>Reinforcement Learning An Introduction</em> by Sutton.</p>
-<p>Here are some useful resources: https://github.com/jiahaoliu1891/Reinforcement-Learning-101</p>
-<hr />
-<h3 id="introduction-to-basic-ideas">Introduction to Basic Ideas</h3>
-<p>Reinforcement Learning is based on the following model, which shows the interaction between <strong>Agent</strong> and <strong>Environment</strong> :</p>
-<p><img src="https://pic2.zhimg.com/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg" alt="强化学习(/Users/leo/Desktop/typroa_img/v2-0fcb443af62ecec2a3bcdaa79b0589e2_1200x500.jpg)--基本概念" style="zoom: 50%;" /></p>
-<p>where <strong>Agent</strong> take (orsay output) <em>Action</em> <span class="math inline">\(A_t\)</span> depending on the <em>State</em> <span class="math inline">\(S_t\)</span> at time step <span class="math inline">\(t\)</span>. The <strong>Environment</strong> decides the next <em>State</em> <span class="math inline">\(S_{t+1}\)</span> given the current <em>State</em> <span class="math inline">\(S_t\)</span> and <em>Action</em> <span class="math inline">\(A_t\)</span> . Meanwhile, it send the <strong>Agent</strong> a <em>Reward</em> <span class="math inline">\(R_t\)</span>.</p>
-<p>The <strong>Core Question</strong> for Reinforcement Learning is : &quot; How should the <strong>Agent</strong> react to the <strong>Environment</strong>? &quot; Formally, this is to ask the <strong>Agent</strong> to learn an <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>.==</p>
-<p>To answer this question, we divide it to a few smaller problems:</p>
-<p><strong>Q1:</strong> How to mathematically model the interaction between <strong>Agent</strong> and <strong>Environment</strong> ? <strong>A1:</strong> Markov Processes → Markov Reward Processes → Markov Decision Processes (MDP)</p>
-<p><strong>Q2:</strong> How to solve Markov Decision Processes, , i.e., finding the <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>== ? <strong>Q2.1 Predition Problem:</strong> Given a <em>Policy</em> <span class="math inline">\(π\)</span>, how to evaluate each <em>State</em> <span class="math inline">\(S\)</span> and each <em>Action</em> <span class="math inline">\(A\)</span>? Formally, how to compute the value <span class="math inline">\(v_π(s) \in R\)</span> for <em>State</em> <span class="math inline">\(s\)</span>, where <span class="math inline">\(v_π(s)\)</span> is a real number that shows <em>how good</em> is a <em>State</em> <span class="math inline">\(S\)</span> ? Similarly, <span class="math inline">\(q(s,a)\)</span> for <em>Action</em> <span class="math inline">\(a\)</span>. <strong>A2.1:</strong> Bellman <em>Expectation</em> Equations (Can be directly solved) <strong>Q2.2 Control Problem:</strong> Then, what's the <strong>optimal</strong> ==<em>Policy</em> <span class="math inline">\(π_*(a|s)\)</span>== , state-value function <span class="math inline">\(v_*(s)\)</span> and state-action function <span class="math inline">\(q_*(s,a)\)</span>? <strong>A2.2:</strong> Bellman <em>Optimality</em> Equations (Can not be directly solved)</p>
-<p><strong>Q3:</strong> Bellman Optimality Equations has <strong>NO</strong> trivial solutions, how to solve it efficiently? <strong>Q3.1: </strong> Suppose we know the MDP: <strong>A3.1</strong>: Dynamic Programming (DP) method. <strong>Q3.2:</strong> Suppose we do not know the MDP: <strong>A3.2:</strong> Monte Carlo (MC) and Temporal Difference (TD) method.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
     <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/12/22/Lanague-and-The-World/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -532,15 +391,9 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
