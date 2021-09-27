@@ -180,7 +180,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/12/29/Perceptual%20analysis/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/02/A%20Detail%20about%20Implementing%20Softmax%20Function/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -194,65 +194,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/12/29/Perceptual%20analysis/" class="post-title-link" itemprop="url">Untitled</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-12-29 07:21:21 / Modified: 07:33:54" itemprop="dateCreated datePublished" datetime="2020-12-29T07:21:21-05:00">2020-12-29</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Perceptual-Analysis-amp-Representational-Redescription"><a href="#Perceptual-Analysis-amp-Representational-Redescription" class="headerlink" title="Perceptual Analysis &amp; Representational Redescription"></a>Perceptual Analysis &amp; Representational Redescription</h1>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/12/22/Image%20Schema/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/12/22/Image%20Schema/" class="post-title-link" itemprop="url">Untitled</a>
+            <a href="/2020/11/02/A%20Detail%20about%20Implementing%20Softmax%20Function/" class="post-title-link" itemprop="url">A Detail about Implementing Softmax Function</a>
         </h1>
 
         <div class="post-meta">
@@ -262,14 +204,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-12-22 05:35:01" itemprop="dateCreated datePublished" datetime="2020-12-22T05:35:01-05:00">2020-12-22</time>
+              <time title="Created: 2020-11-02 22:23:10" itemprop="dateCreated datePublished" datetime="2020-11-02T22:23:10-05:00">2020-11-02</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-24 02:22:50" itemprop="dateModified" datetime="2020-12-24T02:22:50-05:00">2020-12-24</time>
+                <time title="Modified: 2021-09-27 19:29:10" itemprop="dateModified" datetime="2021-09-27T19:29:10-04:00">2021-09-27</time>
               </span>
 
           
@@ -283,953 +225,153 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Image-Schema"><a href="#Image-Schema" class="headerlink" title="Image Schema"></a>Image Schema</h1><h2 id="全文提要"><a href="#全文提要" class="headerlink" title="全文提要"></a>全文提要</h2><p>In this section we consider the theory of image schemas, which was ﬁrst developed within cognitive semantics and has come to be highly inﬂuential in neighbouring areas of study such as cognitive and developmental psychology. The notion of an image schema is closely associated with the development of the embodied cognition thesis, proposed by early researchers in cognitive semantics, notably George Lakoﬀ and Mark Johnson. One of the central questions raised by Lakoﬀ and Johnson in their (1980) book Metaphors We Live By can be stated as follows: Where does the complexity associated with our conceptual representation come from? The answer they oﬀered was that this complexity is, in large measure, due to a tight correlation between the kinds of concepts human beings are capable of forming and the nature of the physical bodies we have. From this perspective, our embodiment is directly responsible for structuring concepts. In this section, therefore, we address the idea central to the thesis of embodied cognition: the image schema.</p>
-<blockquote>
-<p>本文介绍了 Image Schema 这个概念，并且列举了Image Schema 的很多性质以及它对语言的影响。</p>
-<p>但本文没有涉及“<strong>人们（儿童）如何从sensory experience中学习到Image Schema的</strong>” 这个最为关键的问题。</p>
-<p>对于这个问题，我的猜想是：</p>
-<ol>
-<li>无监督：儿童</li>
-<li>有监督：既然Image Schema在某种程度上影响了人们的概念结构（concept structures），进而影响了人们的语言；那么儿童是不是从周围人的语言之中得到了<strong>监督信号</strong>（虽然大多数的学习时候都是无监督的），进而发现了image schema？</li>
-</ol>
-</blockquote>
-<h2 id="1-What-is-an-image-schema"><a href="#1-What-is-an-image-schema" class="headerlink" title="1. What is an image schema?"></a>1. What is an image schema?</h2><blockquote>
-<p>In order for us to have meaningful, connected experiences that we can comprehend and reason about, there must be pattern and order to our actions, perceptions, and conceptions. A schema is a recurrent pattern, shape, and regularity in, or of, these ongoing ordering activities. These patterns emerge as meaningful structures for us chiefly at the level of our bodily movement through space, our manipulation of objects, and our perceptual interactions. It is important to recognise the dynamic character of image [embodied] schemata as structures for organizing our experience and comprehension.</p>
-</blockquote>
-<h4 id="image-schemas-are-emergent"><a href="#image-schemas-are-emergent" class="headerlink" title="image schemas are emergent"></a>image schemas are emergent</h4><blockquote>
-<p>You wake out of a deep sleep and peer out from beneath the covers into your room. You gradually emerge out of your stupor, pull yourself out from under the covers, climb into your robe, stretch out your limbs, and walk in a daze out of the bedroom and into the bathroom. You look in the mirror and see your face staring out at you. You reach into the medicine cabinet, take out the toothpaste, squeeze out some toothpaste, put the toothbrush into your mouth, brush your teeth in a hurry, and rinse out your mouth. (Johnson 1987: 331; our italics diﬀer from the original)</p>
-</blockquote>
-<h2 id="2-Properties-of-image-schemas"><a href="#2-Properties-of-image-schemas" class="headerlink" title="2. Properties of image schemas"></a>2. Properties of image schemas</h2><p>这一章节列出了Image schemas的若干种性质。</p>
-<h3 id="2-1-Image-schemas-are-pre-conceptual-in-origin"><a href="#2-1-Image-schemas-are-pre-conceptual-in-origin" class="headerlink" title="2.1 Image schemas are pre-conceptual in origin"></a>2.1 Image schemas are pre-conceptual in origin</h3><p>According to Johnson, image schemas like the CONTAINER schema are directly grounded in embodied experience: they <strong>relate to and derive from sensory experience</strong>. This means that they are <strong>pre-conceptual</strong> in origin. <em>Mandler (2004)</em> argues that they arise from sensory experiences in the early stages of human development that precede the formation of concepts.  However, once the recurrent patterns of sensory information have been <strong>extracted</strong> and <strong>stored</strong> as an image schema, sensory experience gives rise to a conceptual representation.</p>
-<blockquote>
-<p><strong>批注</strong></p>
-<p>文中没有解释的两个重要的问题：</p>
-<ul>
-<li><p>**学习过程 （extract） ** </p>
-<ul>
-<li><strong>How</strong> do human brain (neural system) learn various image schemas ? </li>
-</ul>
-</li>
-<li><p><strong>表征方法 （store）</strong> </p>
-<ul>
-<li> <strong>How</strong> are image schemas represented in human brain?</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<p>This means that image schemas are concepts, but of a special kind: <strong>they are the foundations of the conceptual system</strong>, because they are the ﬁrst concepts to emerge in the human mind, and precisely because they relate to sensory-perceptual experience, they are particularly schematic.</p>
-<blockquote>
-<p><strong>总结</strong></p>
-<p>这小节主要说了两个关键点：一是Image schemas是从sensory experience之中学习的来的。二是这些 Image schemas 是构造概念系统的基石，因此被描述为 pre-conceptual（国内有些教授把这个词直接翻译为 “前概念”，也是无语）。</p>
-</blockquote>
-<h3 id="2-2-An-image-schema-can-give-rise-to-more-speciﬁc-concepts"><a href="#2-2-An-image-schema-can-give-rise-to-more-speciﬁc-concepts" class="headerlink" title="2.2 An image schema can give rise to more speciﬁc concepts"></a>2.2 An image schema can give rise to more speciﬁc concepts</h3><p>As we have already seen, the concepts lexicalised by the prepositions <em>in</em>, <em>into</em>, <em>out</em>, <em>out of</em> and out from in the passage cited above are all thought to relate to the CONTAINER schema: an <strong>abstract image-schematic concept</strong> that underlies all these much more <strong>speciﬁc lexical concepts</strong>. As we have seen in previous chapters, a lexical concept is a concept speciﬁcally encoded and externalised by a speciﬁc lexical form.</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201222193913397.png" alt="image-20201222193913397" style="zoom:12%;" />
-
-<p>The CONTAINER schema is diagrammed in upper Figure. This image schema consists of the structural elements <strong>interior</strong>, <strong>boundary</strong> and <strong>exterior</strong>: these are the <strong>minimum requirements</strong> for a CONTAINER (Lakoﬀ 1987). The <strong>landmark (LM)</strong>, represented by the circle, consists of two structural elements, the interior – the area within the boundary – and the boundary itself. The exterior is the area outside the landmark, contained within the square. The container is represented as the landmark because the boundary and the exterior together possess suﬃcient <strong>Gestalt properties</strong> (e.g. closure and continuity) to make it the ﬁgure, while the exterior is the ground.</p>
-<blockquote>
-<p><strong>补充</strong></p>
-<p><strong><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A0%BC%E5%BC%8F%E5%A1%94%E5%AD%A6%E6%B4%BE">Gestalt psychology (格式塔心理学)</a></strong></p>
-<p>格式塔心理学主要关注人类是如何从<strong>不完整的、无意识的感知输入</strong>中构建**整体 (wholes, or gestalts’)**的。格式塔心理学提出了若干种原则，下边举几个例子（更多例子请查看上方的wiki链接）。</p>
-<ul>
-<li><strong>ﬁgure-ground segregation</strong></li>
-</ul>
-<p>人脑会自动的把看到的图像分割为为figure（灯塔）和 ground （灰色的横线）</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201222195932971.png" alt="image-20201222195932971" style="zoom:50%;" />
-
-<ul>
-<li><strong>principle of proximity</strong></li>
-</ul>
-<p>人类会自动的把向邻近的东西看做一个整体。如下图，如果点整在竖直方向上离得比较近，那么人脑感知到的就是一列一列的点； 相反如果在水平方向上比较近，那么人脑就会感知到一行一行的点。</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201222200321870.png" alt="image-20201222200321870" style="zoom:50%;" />
-
-<img src="/Users/leo/Desktop/typroa_img/image-20201222200609670.png" alt="image-20201222200609670" style="zoom:50%;" />
-</blockquote>
-<p>Although Figure 6.2 represents the basic <strong>CONTAINER</strong> schema, there are a number of other image schemas that are related to this schema which give rise to distinct concepts related to containment, such as <strong>OUT1</strong>,  <strong>OUT2</strong>.</p>
-<p><strong>OUT1</strong> （例句： John went out of the room）</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201222202051811.png" alt="image-20201222202051811" style="zoom:32%;" />
-
-<blockquote>
-<p><strong>批注</strong></p>
-<p>这里 <strong>trace (TR)</strong> 是不是还暗含了 SOURCE-PATH-GOAL这么一个image schema？</p>
-</blockquote>
-<p><strong>OUT2</strong>  （例句：The honey spread out ）</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201222202121876.png" alt="image-20201222202121876" style="zoom:30%;" />
-
-<blockquote>
-<p><strong>总结</strong></p>
-<p>认知语言学家们通常用简单的图示（diagram）来表示image schema。基于一些基本的image schema（如 CONTAINER），可以生成更加具体的image schema （如 OUT1 和 OUT2）。</p>
-<p><strong>批注</strong></p>
-<p>既然可以通过<em>manipulate</em>基本的image schema从而得到复杂的image schema，那么从这个性质出发，image schema的representation需要有什么样的特征？</p>
-</blockquote>
-<h3 id="2-3-Image-schemas-derive-from-interaction-with-and-observation-of-the-world"><a href="#2-3-Image-schemas-derive-from-interaction-with-and-observation-of-the-world" class="headerlink" title="2.3 Image schemas derive from interaction with and observation of the world"></a>2.3 Image schemas derive from interaction with and observation of the world</h3><p>As we have seen, because image schemas derive from embodied experience, they derive from the way in which we interact with the world. To illustrate this idea, consider the image schema for <strong>FORCE</strong>. This image schema arises from our experience of acting upon other entities, or being acted upon by other entities, resulting in the transfer of motion energy.  Johnson illustrates the interactional derivation of this image schema (in other words, how it arises from experience) as follows:</p>
-<blockquote>
-<p><em>Force is always experienced through interaction. We become aware of force as it aﬀects us or some object in our perceptual ﬁeld. When you enter an unfamiliar dark room and bump into the edge of the table, you are experiencing the interactional character of force. When you eat too much the ingested food presses outwards on your taughtly stretched stomach. There is no schema for force that does not involve interaction or potential interaction. (Johnson 1987: 43).</em></p>
-</blockquote>
-<h3 id="2-4-Image-schemas-are-inherently-meaningful"><a href="#2-4-Image-schemas-are-inherently-meaningful" class="headerlink" title="2.4 Image schemas are inherently meaningful"></a>2.4 Image schemas are inherently meaningful</h3><p>Because image schemas derive from interaction with the world, they are inherently meaningful. Embodied experience is inherently meaningful in the sense that embodied experiences have <strong>predictable consequences</strong>. Let’s illustrate this point with another example: </p>
-<blockquote>
-<p><em>Imagine a cup of coﬀee in your hand. If you move the cup slowly up and down, or from side to side, you expect the coﬀee to move with it</em>. </p>
-</blockquote>
-<p>This is because a <strong>consequence of CONTAIN</strong>, given that it is deﬁned by boundaries, is that it <strong>constrains the location of any entity within these boundaries.</strong> In other words, the cup exerts force-dynamic control over the coﬀee. Of course, this seems rather obvious, but this kind of knowledge, which we take for granted, is acquired as a consequence of our interaction with our physical environment. /* <strong>Again, how?</strong> */ For example, walking across a room holding a cup of coﬀee without spilling it actually involves highly sophisticated motor control that we also acquire from experience: we would be unlikely to ask a two-year-old to perform the same task. This experience gives rise to knowledge structures that enable us to make predictions: if we tip the coﬀee cup upside-down, the coﬀee will pour out.</p>
-<blockquote>
-<p><strong>注释</strong></p>
-<p>这里predictable consequences 是不是一种朴素的因果关系？</p>
-<p><strong>总结</strong></p>
-<p>这一部分举了一个端咖啡的例子，用于说明 <strong>CONTAIN</strong> 这个image schema 由boundaries构成，因此暗含了这么一层含义：boundaries限制了内部物体的物理位置。</p>
-</blockquote>
-<p>The force-dynamic properties just described for the <strong>CONTAINER</strong> schema also show up in linguistic meaning,  as illustrated by the meaning of the preposition  <em>in</em>. Consider the diagram in figure below, </p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201222204652691.png" alt="image-20201222204652691" style="zoom:33%;" />
-
-<p>Vandeloise observes that the image depicted in figure could either represent a bottle or a lightbulb. Observe from example that we can use the preposition in to describe the relation between the lightbulb (TR) and the socket (LM).</p>
-<blockquote>
-<p>(1) <em>The bulb is in the socket.</em></p>
-</blockquote>
-<p>In contrast, we cannot use the preposition in to describe the relation between a bottle and its cap. The symbol preceding this example indicates that the sentence is semantically ‘odd’.</p>
-<blockquote>
-<p>(2) <em>The bottle is in the cap</em></p>
-</blockquote>
-<p>Vandeloise points out that the spatial relation holding between the TR and LM in each of these sentences is identical, and yet while (1) is a perfectly acceptable sentence, (2) is semantically odd. Vandeloise suggests that it is not the spatial relation holding between the <strong>TR</strong> and <strong>LM</strong> that accounts for the acceptability or otherwise of in. He argues that the relevant factor is one of forcedynamics: </p>
-<blockquote>
-<p><em>While the socket exerts a force on the bulb and determines its position, the opposite occurs with the cap and the bottle’ (Vandeloise 1994: 173).</em></p>
-</blockquote>
-<p> In other words, not only is the position and the successful function of the bulb contingent on being in (contained by) the socket, but the socket also prevents the bulb from succumbing to the force of gravity and falling to the ground. In contrast, the position and successful function of the bottle is not contingent on being in the cap. This suggests that our knowledge of the functional consequences associated with the <strong>CONTAINER</strong> image schema aﬀects the contextual acceptability of a preposition like <em>in</em>.</p>
-<blockquote>
-<p><strong>总结</strong></p>
-<p>这里举了一个bulb or bottle的例子：尽管图示相同， <em>”灯泡<strong>在</strong>插座里“</em> 是一种常见的表述，但 <em>”瓶子<strong>在</strong>盖子里“</em>  就显得很奇怪。Vandeloise 指出插座<strong>施力</strong>使得灯泡固定，而瓶子<strong>施力</strong>使得瓶盖固定。因此对于介词 <strong>在</strong>（in）来说，我们的理解受到 functional consequences associated with the <strong>CONTAINER</strong> image schema 的影响。 （总感觉这个例子有点怪）</p>
-</blockquote>
-<h3 id="2-5-Image-schemas-are-analogue-representations"><a href="#2-5-Image-schemas-are-analogue-representations" class="headerlink" title="2.5 Image schemas are analogue representations"></a>2.5 Image schemas are analogue representations</h3><p>Image schemas are analogue representations deriving from experience. In this context, the term ‘analogue’ means image schemas take a form in the conceptual system that mirrors the sensory experience being represented. In other words, although we can try to describe image schemas using words and pictures, they are not represented in the mind in these kinds of symbolic forms. <strong>Instead, image-schematic concepts are represented in the mind in terms of holistic sensory experiences, rather like the memory of a physical experience.</strong> Let’s illustrate this idea with an analogy: learning to drive a car properly cannot simply be achieved by reading a driving manual, or even by listening to a driving instructor explain the ‘rules’ of driving. At best, these provide very rough clues. Instead, we have to ‘learn’ how it ‘feels’ to drive a car by experiencing it at ﬁrst hand. This learning is a complex process, during which we master an array of interrelated sensorimotor routines. Because image schemas derive from sensory experience, <strong>they are represented as summaries of perceptual states which are recorded in memory</strong>. However, what makes them conceptual rather than purely perceptual in nature is that they give rise to concepts that are consciously accessible (Mandler 2004). In other words, image schemas structure (more complex) lexical concepts.</p>
-<blockquote>
-<p><strong>总结</strong></p>
-<p>这一段还是在重复之前的观点，Image schema是从sensory experience中学习到的，并称they are represented as summaries of perceptual states which are recorded in memory. 但是并没有具体说明是如何 represent 的。</p>
-</blockquote>
-<h3 id="2-6-Image-schemas-can-be-internally-complex"><a href="#2-6-Image-schemas-can-be-internally-complex" class="headerlink" title="2.6 Image schemas can be internally complex"></a>2.6 Image schemas can be internally complex</h3><p>Image schemas are often, perhaps typically, comprised of more complex aspects that can be analysed separately. For example, the <strong>CONTAINER</strong> schema is a concept that consists of interior, boundary and exterior elements. Another example of a complex image schema is the <strong>SOURCE-PATH-GOAL</strong> or simply <strong>PATH</strong> schema, represented in Figure below. Because a path is a means of moving from one location to another, it consists of a starting point or SOURCE, a destination or GOAL and a series of contiguous locations in between which relate the source and goal. Like all complex image schemas, the PATH schema constitutes an experiential Gestalt: it has internal structure but emerges as a coherent whole.</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201224115603356.png" alt="image-20201224115603356" style="zoom:30%;" />
-
-<p>One consequence of internal complexity is that diﬀerent components of the PATH schema can be referred to. This is illustrated in example below, where the relevant linguistic units are bracketed. In each of these examples, diﬀerent components of the path are proﬁled by the use of diﬀerent lexical items.</p>
-<blockquote>
-<p>a. SOURCE<br>    John left [England].</p>
-<p>b. GOAL<br>    John travelled [to France].</p>
-<p>c. SOURCE-GOAL<br>    John travelled [from England] [to France].</p>
-<p>d. PATH-GOAL<br>    John travelled [through the Chunnel] [to France].</p>
-<p>e. SOURCE-PATH-GOAL<br>    John travelled [from England] [through the Chunnel] [to France].</p>
-</blockquote>
-<blockquote>
-<p><strong>总结</strong></p>
-<p>Image schemas 具有内部复杂性，比如SOURCE-PATH-GOAL，包含了三个元素。这个复杂性也体现在语言上。</p>
-</blockquote>
-<h3 id="2-7-Image-schemas-can-occur-in-clusters"><a href="#2-7-Image-schemas-can-occur-in-clusters" class="headerlink" title="2.7 Image schemas can occur in clusters"></a>2.7 Image schemas can occur in clusters</h3><p>Image schemas can occur in clusters or networks of related image schemas. To illustrate this, consider again the <strong>FORCE</strong> schema, which actually consists of a series of related schemas. Force schemas share a number of properties (proposed by Johnson 1987) which are summarised in Table 6.2.</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201224120500751.png" alt="image-20201224120500751" style="zoom:30%;" />
-
-<p>Johnson identiﬁes no fewer than seven force schemas that share the properties detailed in Table 6.2. These schemas are shown in Figures 6.7 to 6.13 (after Johnson 1987: 45–8). The small dark circle represents the source of the force, while the square represents an obstruction of some kind. An unbroken arrow represents the force vector (the course taken by the force), while a broken arrow represents a potential force vector.</p>
-<blockquote>
-<p>Example image Schema related to <strong>FORCE</strong>：</p>
-<p><img src="/Users/leo/Desktop/typroa_img/image-20201224151943010.png" alt="image-20201224151943010"></p>
-</blockquote>
-<h2 id="3-Image-schemas-and-linguistic-meaning"><a href="#3-Image-schemas-and-linguistic-meaning" class="headerlink" title="3. Image schemas and linguistic meaning"></a>3. Image schemas and linguistic meaning</h2><h2 id="4-A-provisional-list-of-image-schemas"><a href="#4-A-provisional-list-of-image-schemas" class="headerlink" title="4. A provisional list of image schemas"></a>4. A provisional list of image schemas</h2><p><img src="/Users/leo/Desktop/typroa_img/image-20201224121100233.png" alt="image-20201224121100233"></p>
-<h2 id="5-Image-schemas-and-abstract-thought"><a href="#5-Image-schemas-and-abstract-thought" class="headerlink" title="5. Image schemas and abstract thought"></a>5. Image schemas and abstract thought</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/25/A%20course%20in%20Cognitive%20Linguistics/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/25/A%20course%20in%20Cognitive%20Linguistics/" class="post-title-link" itemprop="url">A course in Cognitive Linguistics</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-11-25 18:10:10" itemprop="dateCreated datePublished" datetime="2020-11-25T18:10:10-05:00">2020-11-25</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-02 02:19:42" itemprop="dateModified" datetime="2020-12-02T02:19:42-05:00">2020-12-02</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="A-course-in-Cognitive-Linguistics"><a href="#A-course-in-Cognitive-Linguistics" class="headerlink" title="A course in Cognitive Linguistics"></a>A course in Cognitive Linguistics</h1><p>A brief note of <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=G_tPdCBQSVc&list=PLKgdsSsfw-faeun9_0LVETPT-ZGpKptlj&index=3">Cognitive Linguistics cource</a> on Youtube given by Martin Hilpert.</p>
-<h3 id="Metaphor"><a href="#Metaphor" class="headerlink" title="Metaphor"></a>Metaphor</h3><blockquote>
-<p>The essence of metaphor is understanding one kind of thing in terms of another</p>
-</blockquote>
-<p>Exg: Arguments is a War</p>
-<p>Many examples can be found in《By Metaphor We Live》</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201125180703916.png" alt="image-20201125180703916" style="zoom:33%;" />
-
-<p>target domain and source domain will activate each other：</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201125180816468.png" alt="image-20201125180816468" style="zoom:33%;" />
-
-<p>隐喻理论的好处在于构建了一个从<strong>物理世界语义</strong>到<strong>抽象世界语义</strong>的映射。</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201125115658444.png" alt="image-20201125115658444" style="zoom: 33%;" />
-
-<h3 id="Category"><a href="#Category" class="headerlink" title="Category"></a>Category</h3><p>每个 Category 都有一个原型（Prototype）。</p>
-<p>研究人员通过测试人们的<strong>反应时间</strong>来支撑这个理论，例如：在提到bird的时候，Robin的反应时间要远远小于Penguin。说明Robin离Prototype更近。</p>
-<p>对于人脑来说，越接近Prototype的实例<strong>反应速度</strong>越快。</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201125130222287.png" alt="image-20201125130222287" style="zoom:33%;" />
-
-<h3 id="Conceptual-Integration"><a href="#Conceptual-Integration" class="headerlink" title="==Conceptual Integration=="></a>==Conceptual Integration==</h3><p>这个理论还挺有意思的。</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201125170916523.png" alt="image-20201125170916523" style="zoom:33%;" />
-
-<img src="/Users/leo/Desktop/typroa_img/image-20201125170946784.png" alt="image-20201125170946784" style="zoom:33%;" />
-
-<img src="/Users/leo/Desktop/typroa_img/image-20201125171013220.png" alt="image-20201125171013220" style="zoom:33%;" />
-
-<p>下边一张图讲的是Emergent structures，butcher（屠夫）本来没有贬义，但是在“That surgenon is a butcher”这句话里边，butcher变成了 incompetent， careless，danger的代名词，新的含义<strong>emerge</strong>了。</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201125173220228.png" alt="image-20201125173220228" style="zoom:33%;" />
-
-<p>即使在词（Lex）的层面，也可以看到Conceptual integration</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201125174047296.png" alt="image-20201125174047296" style="zoom:40%;" />
-
-<p>这里有一个很有意思的小插曲：</p>
-<p> 下边有两幅图：左边是一个大人在给小孩递水，右边是一个小孩在浇花。</p>
-<p>如果让成年人来对这两个图做match，那从左到右的matching 关系应该是： </p>
-<p>​                                                $$大人_{左}\rightarrow小孩_{右}，小孩_{左}\rightarrow花_{右}$$</p>
-<p>而如果让我四岁大的小外甥女做的话（4岁小孩很熟悉的连线题），她的回答是：</p>
-<p>​                                                $$小孩_{左}\rightarrow小孩_{右}，大人_{左}\rightarrow花_{右}$$</p>
-<p>她会首先把两个小孩连起来，然后把大人和花连起来。</p>
-<p>这是不是说明，成年人更倾向于解读<strong>关系</strong>的信息，而小孩子更加关注个体的特征？</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126172246174.png" alt="image-20201126172246174" style="zoom:33%;" />
-
-<h3 id="Frame-Semantics"><a href="#Frame-Semantics" class="headerlink" title="Frame Semantics"></a>Frame Semantics</h3><p><strong>Frames</strong></p>
-<ul>
-<li>Cognitive schemas that you use to interpret events and situations in the world</li>
-<li>The frame that you use gives you a certain ‘world view’</li>
-<li>The same event may be interpreted in very different ways</li>
-</ul>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126180138051.png" alt="image-20201126180138051" style="zoom:33%;" />
-
-<p>discount是定义在commercial的frame里边的：</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126180731686.png" alt="image-20201126180731686" style="zoom:33%;" />
-
-<p>UCB有一个知识库：<a target="_blank" rel="noopener" href="https://framenet.icsi.berkeley.edu/fndrupal/">FrameNet</a></p>
-<hr>
-<h3 id="Cognitive-Grammar"><a href="#Cognitive-Grammar" class="headerlink" title="==Cognitive Grammar=="></a>==Cognitive Grammar==</h3><p>Cognitive Grammar 是比较难懂的一个点，但是比较prospective，之后再研究研究，</p>
-<p>参考书：《foundations of cognitive grammar》langacker</p>
-<h5 id="Base-and-Profile"><a href="#Base-and-Profile" class="headerlink" title="Base and Profile"></a>Base and Profile</h5><ul>
-<li>Base: 就是 frame，是一种情景</li>
-<li>profile：frame 中 highlight 的部分</li>
-</ul>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126192722455.png" alt="image-20201126192722455" style="zoom: 33%;" />
-
-
-
-<h5 id="Trajectory-and-Landmark"><a href="#Trajectory-and-Landmark" class="headerlink" title="Trajectory and Landmark"></a>Trajectory and Landmark</h5><ul>
-<li>Trajectory (tr)</li>
-<li>Landmark (lm)</li>
-</ul>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126192008977.png" alt="image-20201126192008977" style="zoom: 50%;" />
-
-<h5 id="Construal"><a href="#Construal" class="headerlink" title="Construal"></a>Construal</h5><blockquote>
-<p>Construal is our ability to conceive and portray the same situation in alternate ways</p>
-</blockquote>
-<p>E.g.: different highlights</p>
-<ul>
-<li>The <strong>table</strong> is under the lamp </li>
-<li>The <strong>lamp</strong> is over ther table</li>
-</ul>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126191812884.png" alt="image-20201126191812884" style="zoom:33%;" />
-
-<p>Different base:</p>
-<ul>
-<li>The neighbors are <strong>away</strong>: <strong>spacial</strong></li>
-<li>The neighbors are <strong>gone</strong>: <strong>spacial &amp; temporal</strong></li>
-</ul>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126192207503.png" alt="image-20201126192207503" style="zoom: 45%;" />
-
-<p>Different profiles:</p>
-<ul>
-<li>Bill <strong>sent a walrus</strong> to Joyce.</li>
-<li>Bill sent <strong>Joyce</strong> a walrus.</li>
-</ul>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126192510731.png" alt="image-20201126192510731" style="zoom: 45%;" />
-
-<ul>
-<li>I saw <strong>how</strong> the bridge collapsed</li>
-<li>I saw <strong>the collapse of</strong> the bridge</li>
-</ul>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126193121969.png" alt="image-20201126193121969" style="zoom: 45%;" />
-
-<h5 id="Linguistic-Units"><a href="#Linguistic-Units" class="headerlink" title="Linguistic Units"></a>Linguistic Units</h5><p>类似于某种图示</p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126200212550.png" alt="image-20201126200212550" style="zoom:33%;" />
-
-<img src="/Users/leo/Desktop/typroa_img/image-20201126194736479.png" alt="image-20201126194736479" style="zoom:33%;" />
-
-<img src="/Users/leo/Desktop/typroa_img/image-20201126194503905.png" alt="image-20201126194503905" style="zoom:33%;" />
-
-<p><strong>句子“ Lamp is above table ” 的图示如下：</strong></p>
-<p><strong>==这里把句子转换成了某种visual schema，可以考虑用到模型里？==</strong></p>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126195029601.png" alt="image-20201126195029601" style="zoom:50%;" />
-
-<h5 id="Grounding"><a href="#Grounding" class="headerlink" title="Grounding"></a>Grounding</h5><p>没太看懂，猜测这里说的意思是，之前讨论的都是schema level的东西，而把schema level的东西落实到具体的case的过程就是grounding。比如上边有 lamp above table，grounding之后就变成 <strong>the</strong> lamp above table。加了 the 就变成具体说出来的句子了。</p>
-<blockquote>
-<p>Grounding predications are obligatory grammatical elements needed to turn nouns into full nonminals, and verbs into finite clauses.</p>
-</blockquote>
-<ul>
-<li>名词加上定冠词</li>
-</ul>
-<p><img src="/Users/leo/Desktop/typroa_img/image-20201126200851729.png" alt="image-20201126200851729" style="zoom: 33%;" /><img src="/Users/leo/Desktop/typroa_img/image-20201126201144477.png" alt="image-20201126201144477" style="zoom:33%;" /></p>
-<ul>
-<li>verb加上时态</li>
-</ul>
-<img src="/Users/leo/Desktop/typroa_img/image-20201126201144477.png" alt="image-20201126201144477" style="zoom:33%;" />
-
-<img src="/Users/leo/Desktop/typroa_img/image-20201126201305747.png" alt="image-20201126201305747" style="zoom:33%;" />
-
-<h3 id="其他资料："><a href="#其他资料：" class="headerlink" title="其他资料："></a>其他资料：</h3><ul>
-<li>科普：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=KLJKht-xF70">https://www.youtube.com/watch?v=KLJKht-xF70</a></li>
-<li>吉尔斯·福康涅认知语义构建十讲: <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av34090971/">https://www.bilibili.com/video/av34090971/</a></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/18/Experience%20Grounds%20Language/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/18/Experience%20Grounds%20Language/" class="post-title-link" itemprop="url">Experience Grounds Language</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-11-18 16:11:18 / Modified: 03:07:35" itemprop="dateCreated datePublished" datetime="2020-11-18T16:11:18-05:00">2020-11-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a target="_blank" rel="noopener" href="https://arxiv.org/abs/2004.10151">Experience Grounds Language</a>, 这可能是今年读过最好的一篇NLP方向的Survey了。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/17/%E5%AF%B9%E8%AF%9D%E7%B3%BB%E7%BB%9FSurvey/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/17/%E5%AF%B9%E8%AF%9D%E7%B3%BB%E7%BB%9FSurvey/" class="post-title-link" itemprop="url">对话系统Survey</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-11-17 20:07:10 / Modified: 09:10:39" itemprop="dateCreated datePublished" datetime="2020-11-17T20:07:10-05:00">2020-11-17</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="对话系统Survey"><a href="#对话系统Survey" class="headerlink" title="对话系统Survey"></a>对话系统Survey</h1><p>读了一篇对话系统方向的Survey： <strong>A Survey on Dialogue Systems: Recent Advances and New Frontiers</strong></p>
-<p>对话系统可以分为task-oriented和non-task-oriented。这里主要关注<strong>task-oriented</strong>方向。</p>
-<h4 id="Pipeline-Methods"><a href="#Pipeline-Methods" class="headerlink" title="Pipeline Methods"></a>Pipeline Methods</h4><p>由以下四个模块组成</p>
-<ul>
-<li>Natural Language Understanding<ul>
-<li>parses the user utterance into predeﬁned semantic slots<ul>
-<li><strong>Intent detection</strong> (It classiﬁes the utterance into one of the pre-deﬁned intents)</li>
-<li><strong>Slot filling</strong> (usually deﬁned as a sequence labeling problem, where words in the sentence are assigned with semantic labels.)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Dialogue State Tracking<ul>
-<li>It manages the input of each turn along with the dialogue history and outputs the current dialogue state.</li>
-<li>没太理解这个模块具体是怎么运作的</li>
-<li>有个 <a target="_blank" rel="noopener" href="https://dstc9.dstc.community/organizing-committees">Dialog State Tracking Challenge</a>，可以关注一下</li>
-</ul>
-</li>
-<li>Policy learning<ul>
-<li>It learns the next action based on current dialogue state.</li>
-<li>有监督学习或者强化学习的方法进行训练</li>
-</ul>
-</li>
-<li>Natural Language Generation<ul>
-<li>It maps the selected action to its surface and generates the response.</li>
-</ul>
-</li>
-</ul>
-<h4 id="End2End-Methods"><a href="#End2End-Methods" class="headerlink" title="End2End Methods"></a>End2End Methods</h4><p>Pipeline Methods 主要有<em>以下三个缺点</em>:</p>
-<ul>
-<li>diﬀcult to adapt to new domains</li>
-<li>credit assignment problem<ul>
-<li>the end user’s feedback is hard to be propagated to each upstream module.</li>
-</ul>
-</li>
-<li>process interdependence.<ul>
-<li>The input of a component is dependent on the output of another component.</li>
-<li>Error propagation</li>
-</ul>
-</li>
-</ul>
-<h4 id="一些网上的视频资料"><a href="#一些网上的视频资料" class="headerlink" title="一些网上的视频资料"></a>一些网上的视频资料</h4><ul>
-<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12E411g7ki?from=search&seid=31516681601587708">北邮张庆恒：如何基于 rasa 搭建一个中文对话系统 （有源码视频）| 分享总结</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12W411o7nP?from=search&seid=31516681601587708">PaperWeekly × 清华大学：计算未来轻沙龙——对话系统研究进展</a></p>
-</li>
-</ul>
-<h5 id="P-S"><a href="#P-S" class="headerlink" title="P.S:"></a>P.S:</h5><p>Huan组毕业的学生在学术界发展的都好棒啊。Jiliang Tang的引用都1w+了。Xia Hu 在TAMU也拿了好多funding。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/14/%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E9%A2%84%E5%A4%84%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/14/%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E9%A2%84%E5%A4%84%E7%90%86/" class="post-title-link" itemprop="url">Untitled</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-11-14 00:35:45 / Modified: 00:37:34" itemprop="dateCreated datePublished" datetime="2020-11-14T00:35:45-05:00">2020-11-14</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="中文文本预处理"><a href="#中文文本预处理" class="headerlink" title="中文文本预处理"></a>中文文本预处理</h1><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/pinard/p/6744056.html">https://www.cnblogs.com/pinard/p/6744056.html</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/13/sed/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/13/sed/" class="post-title-link" itemprop="url">Untitled</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-11-13 06:47:06 / Modified: 06:47:28" itemprop="dateCreated datePublished" datetime="2020-11-13T06:47:06-05:00">2020-11-13</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h1><p><strong>sed</strong>是一种流编辑器，它是文本处理中非常中的工具，能够完美的配合正则表达式使用，功能不同凡响。处理时，把当前处理的行存储在临时缓冲区中，称为“模式空间”（pattern space），接着用sed命令处理缓冲区中的内容，处理完成后，把缓冲区的内容送往屏幕。接着处理下一行，这样不断重复，直到文件末尾。文件内容并没有 改变，除非你使用重定向存储输出。Sed主要用来自动编辑一个或多个文件；简化对文件的反复操作；编写转换程序等。</p>
-<p><strong>命令格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed [options] &#x27;command&#x27; file(s)</span><br><span class="line">sed [options] -f scriptfile file(s)</span><br></pre></td></tr></table></figure>
-
-<h3 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-e&lt;script&gt;或--expression=&lt;script&gt;：以选项中的指定的script来处理输入的文本文件；</span><br><span class="line">-f&lt;script文件&gt;或--file=&lt;script文件&gt;：以选项中指定的script文件来处理输入的文本文件；</span><br><span class="line">-h或--help：显示帮助；</span><br><span class="line">-n或--quiet或——silent：仅显示script处理后的结果；</span><br><span class="line">-V或--version：显示版本信息。</span><br></pre></td></tr></table></figure>
-
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><p>文件：指定待处理的文本文件列表。</p>
-<h3 id="sed命令"><a href="#sed命令" class="headerlink" title="sed命令"></a>sed命令</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">a\ 在当前行下面插入文本。</span><br><span class="line">i\ 在当前行上面插入文本。</span><br><span class="line">c\ 把选定的行改为新的文本。</span><br><span class="line">d 删除，删除选择的行。</span><br><span class="line">D 删除模板块的第一行。</span><br><span class="line">s 替换指定字符</span><br><span class="line">h 拷贝模板块的内容到内存中的缓冲区。</span><br><span class="line">H 追加模板块的内容到内存中的缓冲区。</span><br><span class="line">g 获得内存缓冲区的内容，并替代当前模板块中的文本。</span><br><span class="line">G 获得内存缓冲区的内容，并追加到当前模板块文本的后面。</span><br><span class="line">l 列表不能打印字符的清单。</span><br><span class="line">n 读取下一个输入行，用下一个命令处理新的行而不是用第一个命令。</span><br><span class="line">N 追加下一个输入行到模板块后面并在二者间嵌入一个新行，改变当前行号码。</span><br><span class="line">p 打印模板块的行。</span><br><span class="line">P(大写) 打印模板块的第一行。</span><br><span class="line">q 退出Sed。</span><br><span class="line">b lable 分支到脚本中带有标记的地方，如果分支不存在则分支到脚本的末尾。</span><br><span class="line">r file 从file中读行。</span><br><span class="line">t label if分支，从最后一行开始，条件一旦满足或者T，t命令，将导致分支到带有标号的命令处，或者到脚本的末尾。</span><br><span class="line">T label 错误分支，从最后一行开始，一旦发生错误或者T，t命令，将导致分支到带有标号的命令处，或者到脚本的末尾。</span><br><span class="line">w file 写并追加模板块到file末尾。  </span><br><span class="line">W file 写并追加模板块的第一行到file末尾。  </span><br><span class="line">! 表示后面的命令对所有没有被选定的行发生作用。  </span><br><span class="line">= 打印当前行号码。  </span><br><span class="line"># 把注释扩展到下一个换行符以前。  </span><br></pre></td></tr></table></figure>
-
-<h3 id="sed替换标记"><a href="#sed替换标记" class="headerlink" title="sed替换标记"></a>sed替换标记</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">g 表示行内全面替换。  </span><br><span class="line">p 表示打印行。  </span><br><span class="line">w 表示把行写入一个文件。  </span><br><span class="line">x 表示互换模板块中的文本和缓冲区中的文本。  </span><br><span class="line">y 表示把一个字符翻译为另外的字符（但是不用于正则表达式）</span><br><span class="line">\1 子串匹配标记</span><br><span class="line">&amp; 已匹配字符串标记</span><br></pre></td></tr></table></figure>
-
-<h3 id="sed元字符集"><a href="#sed元字符集" class="headerlink" title="sed元字符集"></a>sed元字符集</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">^ 匹配行开始，如：/^sed/匹配所有以sed开头的行。</span><br><span class="line">$ 匹配行结束，如：/sed$/匹配所有以sed结尾的行。</span><br><span class="line">. 匹配一个非换行符的任意字符，如：/s.d/匹配s后接一个任意字符，最后是d。</span><br><span class="line">* 匹配0个或多个字符，如：/*sed/匹配所有模板是一个或多个空格后紧跟sed的行。</span><br><span class="line">[] 匹配一个指定范围内的字符，如/[ss]ed/匹配sed和Sed。  </span><br><span class="line">[^] 匹配一个不在指定范围内的字符，如：/[^A-RT-Z]ed/匹配不包含A-R和T-Z的一个字母开头，紧跟ed的行。</span><br><span class="line">\(..\) 匹配子串，保存匹配的字符，如s/\(love\)able/\1rs，loveable被替换成lovers。</span><br><span class="line">&amp; 保存搜索字符用来替换其他字符，如s/love/**&amp;**/，love这成**love**。</span><br><span class="line">\&lt; 匹配单词的开始，如:/\&lt;love/匹配包含以love开头的单词的行。</span><br><span class="line">\&gt; 匹配单词的结束，如/love\&gt;/匹配包含以love结尾的单词的行。</span><br><span class="line">x\&#123;m\&#125; 重复字符x，m次，如：/0\&#123;5\&#125;/匹配包含5个0的行。</span><br><span class="line">x\&#123;m,\&#125; 重复字符x，至少m次，如：/0\&#123;5,\&#125;/匹配至少有5个0的行。</span><br><span class="line">x\&#123;m,n\&#125; 重复字符x，至少m次，不多于n次，如：/0\&#123;5,10\&#125;/匹配5~10个0的行。</span><br></pre></td></tr></table></figure>
-
-<h2 id="sed用法实例"><a href="#sed用法实例" class="headerlink" title="sed用法实例"></a>sed用法实例</h2><h3 id="替换操作：s命令"><a href="#替换操作：s命令" class="headerlink" title="替换操作：s命令"></a>替换操作：s命令</h3><p>替换文本中的字符串：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;s/book/books/&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p><strong>-n选项</strong>和<strong>p命令</strong>一起使用表示只打印那些发生替换的行：</p>
-<p>sed -n ‘s/<a target="_blank" rel="noopener" href="http://man.linuxde.net/test">test</a>/TEST/p’ file</p>
-<p>直接编辑文件<strong>选项-i</strong>，会匹配file文件中每一行的第一个book替换为books：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i &#x27;s/book/books/g&#x27; file</span><br></pre></td></tr></table></figure>
-
-<h3 id="全面替换标记g"><a href="#全面替换标记g" class="headerlink" title="全面替换标记g"></a>全面替换标记g</h3><p>使用后缀 /g 标记会替换每一行中的所有匹配：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;s/book/books/g&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>当需要从第N处匹配开始替换时，可以使用 /Ng：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">echo sksksksksksk | sed &#x27;s/sk/SK/2g&#x27;</span><br><span class="line">skSKSKSKSKSK</span><br><span class="line"></span><br><span class="line">echo sksksksksksk | sed &#x27;s/sk/SK/3g&#x27;</span><br><span class="line">skskSKSKSKSK</span><br><span class="line"></span><br><span class="line">echo sksksksksksk | sed &#x27;s/sk/SK/4g&#x27;</span><br><span class="line">skskskSKSKSK</span><br></pre></td></tr></table></figure>
-
-<h3 id="定界符"><a href="#定界符" class="headerlink" title="定界符"></a>定界符</h3><p>以上命令中字符 / 在sed中作为定界符使用，也可以使用任意的定界符：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;s:test:TEXT:g&#x27;</span><br><span class="line">sed &#x27;s|test|TEXT|g&#x27;</span><br></pre></td></tr></table></figure>
-
-<p>定界符出现在样式内部时，需要进行转义：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;s/\/bin/\/usr\/local\/bin/g&#x27;</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除操作：d命令"><a href="#删除操作：d命令" class="headerlink" title="删除操作：d命令"></a>删除操作：d命令</h3><p>删除空白行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;/^$/d&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>删除文件的第2行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;2d&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>删除文件的第2行到末尾所有行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;2,$d&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>删除文件最后一行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;$d&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>删除文件中所有开头是test的行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;/^test/&#x27;d file</span><br></pre></td></tr></table></figure>
-
-<h3 id="已匹配字符串标记-amp"><a href="#已匹配字符串标记-amp" class="headerlink" title="已匹配字符串标记&amp;"></a>已匹配字符串标记&amp;</h3><p>正则表达式 \w+ 匹配每一个单词，使用 [&amp;] 替换它，&amp; 对应于之前所匹配到的单词：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo this is a test line | sed &#x27;s/\w\+/[&amp;]/g&#x27;</span><br><span class="line">[this] [is] [a] [test] [line]</span><br></pre></td></tr></table></figure>
-
-<p>所有以192.168.0.1开头的行都会被替换成它自已加localhost：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;s/^192.168.0.1/&amp;localhost/&#x27; file</span><br><span class="line">192.168.0.1localhost</span><br></pre></td></tr></table></figure>
-
-<h3 id="子串匹配标记-1"><a href="#子串匹配标记-1" class="headerlink" title="子串匹配标记\1"></a>子串匹配标记\1</h3><p>匹配给定样式的其中一部分：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo this is digit 7 in a number | sed &#x27;s/digit \([0-9]\)/\1/&#x27;</span><br><span class="line">this is 7 in a number</span><br></pre></td></tr></table></figure>
-
-<p>命令中 digit 7，被替换成了 7。样式匹配到的子串是 7，(..) 用于匹配子串，对于匹配到的第一个子串就标记为 <strong>\1</strong>，依此类推匹配到的第二个结果就是 <strong>\2</strong>，例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo aaa BBB | sed &#x27;s/\([a-z]\+\) \([A-Z]\+\)/\2 \1/&#x27;</span><br><span class="line">BBB aaa</span><br></pre></td></tr></table></figure>
-
-<p>love被标记为1，所有loveable会被替换成lovers，并打印出来：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -n &#x27;s/\(love\)able/\1rs/p&#x27; file</span><br></pre></td></tr></table></figure>
-
-<h3 id="组合多个表达式"><a href="#组合多个表达式" class="headerlink" title="组合多个表达式"></a>组合多个表达式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;表达式&#x27; | sed &#x27;表达式&#x27;</span><br><span class="line"></span><br><span class="line">等价于：</span><br><span class="line"></span><br><span class="line">sed &#x27;表达式; 表达式&#x27;</span><br></pre></td></tr></table></figure>
-
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>sed表达式可以使用单引号来引用，但是如果表达式内部包含变量字符串，就需要使用双引号。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test=hello</span><br><span class="line">echo hello WORLD | sed &quot;s/$test/HELLO&quot;</span><br><span class="line">HELLO WORLD</span><br></pre></td></tr></table></figure>
-
-<h3 id="选定行的范围：-（逗号）"><a href="#选定行的范围：-（逗号）" class="headerlink" title="选定行的范围：,（逗号）"></a>选定行的范围：,（逗号）</h3><p>所有在模板test和check所确定的范围内的行都被打印：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -n &#x27;/test/,/check/p&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>打印从第5行开始到第一个包含以test开始的行之间的所有行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -n &#x27;5,/^test/p&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>对于模板test和west之间的行，每行的末尾用字符串aaa bbb替换：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;/test/,/west/s/$/aaa bbb/&#x27; file</span><br></pre></td></tr></table></figure>
-
-<h3 id="多点编辑：e命令"><a href="#多点编辑：e命令" class="headerlink" title="多点编辑：e命令"></a>多点编辑：e命令</h3><p>-e选项允许在同一行里执行多条命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -e &#x27;1,5d&#x27; -e &#x27;s/test/check/&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>上面sed表达式的第一条命令删除1至5行，第二条命令用check替换test。命令的执行顺序对结果有影响。如果两个命令都是替换命令，那么第一个替换命令将影响第二个替换命令的结果。</p>
-<p>和 -e 等价的命令是 –expression：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed --expression=&#x27;s/test/check/&#x27; --expression=&#x27;/love/d&#x27; file</span><br></pre></td></tr></table></figure>
-
-<h3 id="从文件读入：r命令"><a href="#从文件读入：r命令" class="headerlink" title="从文件读入：r命令"></a>从文件读入：r命令</h3><p>file里的内容被读进来，显示在与test匹配的行后面，如果匹配多行，则file的内容将显示在所有匹配行的下面：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;/test/r file&#x27; filename</span><br></pre></td></tr></table></figure>
-
-<h3 id="写入文件：w命令"><a href="#写入文件：w命令" class="headerlink" title="写入文件：w命令"></a>写入文件：w命令</h3><p>在example中所有包含test的行都被写入file里：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -n &#x27;/test/w file&#x27; example</span><br></pre></td></tr></table></figure>
-
-<h3 id="追加（行下）：a-命令"><a href="#追加（行下）：a-命令" class="headerlink" title="追加（行下）：a\命令"></a>追加（行下）：a\命令</h3><p>将 this is a test line 追加到 以test 开头的行后面：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;/^test/a\this is a test line&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>在 test.conf 文件第2行之后插入 this is a test line：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i &#x27;2a\this is a test line&#x27; test.conf</span><br></pre></td></tr></table></figure>
-
-<h3 id="插入（行上）：i-命令"><a href="#插入（行上）：i-命令" class="headerlink" title="插入（行上）：i\命令"></a>插入（行上）：i\命令</h3><p>将 this is a test line 追加到以test开头的行前面：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;/^test/i\this is a test line&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>在test.conf文件第5行之前插入this is a test line：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i &#x27;5i\this is a test line&#x27; test.conf</span><br></pre></td></tr></table></figure>
-
-<h3 id="下一个：n命令"><a href="#下一个：n命令" class="headerlink" title="下一个：n命令"></a>下一个：n命令</h3><p>如果test被匹配，则移动到匹配行的下一行，替换这一行的aa，变为bb，并打印该行，然后继续：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;/test/&#123; n; s/aa/bb/; &#125;&#x27; file</span><br></pre></td></tr></table></figure>
-
-<h3 id="变形：y命令"><a href="#变形：y命令" class="headerlink" title="变形：y命令"></a>变形：y命令</h3><p>把1~10行内所有abcde转变为大写，注意，正则表达式元字符不能使用这个命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;1,10y/abcde/ABCDE/&#x27; file</span><br></pre></td></tr></table></figure>
-
-<h3 id="退出：q命令"><a href="#退出：q命令" class="headerlink" title="退出：q命令"></a>退出：q命令</h3><p>打印完第10行后，退出sed</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed &#x27;10q&#x27; file</span><br></pre></td></tr></table></figure>
-
-<h3 id="保持和获取：h命令和G命令"><a href="#保持和获取：h命令和G命令" class="headerlink" title="保持和获取：h命令和G命令"></a>保持和获取：h命令和G命令</h3><p>在sed处理文件的时候，每一行都被保存在一个叫模式空间的临时缓冲区中，除非行被删除或者输出被取消，否则所有被处理的行都将 打印在屏幕上。接着模式空间被清空，并存入新的一行等待处理。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -e &#x27;/test/h&#x27; -e &#x27;$G&#x27; file</span><br></pre></td></tr></table></figure>
-
-<p>在这个例子里，匹配test的行被找到后，将存入模式空间，h命令将其复制并存入一个称为保持缓存区的特殊缓冲区内。第二条语句的意思是，当到达最后一行后，G命令取出保持缓冲区的行，然后把它放回模式空间中，且追加到现在已经存在于模式空间中的行的末尾。在这个例子中就是追加到最后一行。简单来说，任何包含test的行都被复制并追加到该文件的末尾。</p>
-<h3 id="保持和互换：h命令和x命令"><a href="#保持和互换：h命令和x命令" class="headerlink" title="保持和互换：h命令和x命令"></a>保持和互换：h命令和x命令</h3><p>互换模式空间和保持缓冲区的内容。也就是把包含test与check的行互换：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -e &#x27;/test/h&#x27; -e &#x27;/check/x&#x27; file</span><br></pre></td></tr></table></figure>
-
-<h3 id="脚本scriptfile"><a href="#脚本scriptfile" class="headerlink" title="脚本scriptfile"></a>脚本scriptfile</h3><p>sed脚本是一个sed的命令清单，启动Sed时以-f选项引导脚本文件名。Sed对于脚本中输入的命令非常挑剔，在命令的末尾不能有任何空白或文本，如果在一行中有多个命令，要用分号分隔。以#开头的行为注释行，且不能跨行。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed [options] -f scriptfile file(s)</span><br></pre></td></tr></table></figure>
-
-<h3 id="打印奇数行或偶数行"><a href="#打印奇数行或偶数行" class="headerlink" title="打印奇数行或偶数行"></a>打印奇数行或偶数行</h3><p>方法1：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed -n &#x27;p;n&#x27; test.txt  #奇数行</span><br><span class="line">sed -n &#x27;n;p&#x27; test.txt  #偶数行</span><br></pre></td></tr></table></figure>
-
-<p>方法2：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed -n &#x27;1~2p&#x27; test.txt  #奇数行</span><br><span class="line">sed -n &#x27;2~2p&#x27; test.txt  #偶数行</span><br></pre></td></tr></table></figure>
-
-<h3 id="打印匹配字符串的下一行"><a href="#打印匹配字符串的下一行" class="headerlink" title="打印匹配字符串的下一行"></a>打印匹配字符串的下一行</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grep -A 1 SCC URFILE</span><br><span class="line">sed -n &#x27;/SCC/&#123;n;p&#125;&#x27; URFILE</span><br><span class="line">awk &#x27;/SCC/&#123;getline; print&#125;&#x27; URFILE</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/13/iconv/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/13/iconv/" class="post-title-link" itemprop="url">Untitled</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-11-13 06:10:10" itemprop="dateCreated datePublished" datetime="2020-11-13T06:10:10-05:00">2020-11-13</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-11-15 09:02:10" itemprop="dateModified" datetime="2020-11-15T09:02:10-05:00">2020-11-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="iconv"><a href="#iconv" class="headerlink" title="iconv"></a>iconv</h1><p><strong>iconv命令</strong>是用来转换文件的编码方式的，比如它可以将UTF8编码的转换成GB18030的编码，反过来也行。JDK中也提供了类似的工具native2ascii。Linux下的iconv开发库包括iconv_open,iconv_close,iconv等C函数，可以用来在C/C++程序中很方便的转换字符编码，这在抓取网页的程序中很有用处，而iconv命令在调试此类程序时用得着。</p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iconv -f encoding [-t encoding] [inputfile]... </span><br></pre></td></tr></table></figure>
-
-<h3 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-f encoding :把字符从encoding编码开始转换。 </span><br><span class="line">-t encoding :把字符转换到encoding编码。 </span><br><span class="line">-l :列出已知的编码字符集合 </span><br><span class="line">-o file :指定输出文件 </span><br><span class="line">-c :忽略输出的非法字符 </span><br><span class="line">-s :禁止警告信息，但不是错误信息 </span><br><span class="line">--verbose :显示进度信息 </span><br><span class="line">-f和-t所能指定的合法字符在-l选项的命令里面都列出来了。 </span><br></pre></td></tr></table></figure>
-
-<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat news_sohusite_xml.dat | iconv -f gb18030 -t utf-8 &gt; news_sohusite.txt</span><br></pre></td></tr></table></figure>
-
-
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/12/Chomsky%20hierarchy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/12/Chomsky%20hierarchy/" class="post-title-link" itemprop="url">Untitled</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-11-12 21:36:18 / Modified: 22:09:11" itemprop="dateCreated datePublished" datetime="2020-11-12T21:36:18-05:00">2020-11-12</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Chomsky-Hierarchy"><a href="#Chomsky-Hierarchy" class="headerlink" title="Chomsky Hierarchy"></a>Chomsky Hierarchy</h1><p>首先要安利一个<a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCdZcGRaBV-VRRyU4t6Ur0mw">Youtube频道</a>。UP每一集用10分钟左右介绍一些语言学的小知识，适合拓展知识面用。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2020/11/02/Softmax%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E7%BB%86%E8%8A%82/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jiahaoliu1891">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mind & Programming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/11/02/Softmax%E5%AE%9E%E7%8E%B0%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%B8%80%E4%B8%AA%E5%B0%8F%E7%BB%86%E8%8A%82/" class="post-title-link" itemprop="url">Softmax实现过程中的一个小细节</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-11-02 22:23:10 / Modified: 09:45:17" itemprop="dateCreated datePublished" datetime="2020-11-02T22:23:10-05:00">2020-11-02</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Softmax实现过程中的一个小细节："><a href="#Softmax实现过程中的一个小细节：" class="headerlink" title="Softmax实现过程中的一个小细节："></a>Softmax实现过程中的一个小细节：</h2><p>Softmax函数在实现过程中有一个小细节：为了避免求exp溢出，所以要减去最大值，之后再求exp。</p>
-<p>例如：假设输入 x 是一个的vector : $$ \bold{x} = [x_0,x_1,…, x_n]$$，原始的Softmax函数输出应该为: $$[\frac{e^{x_0}}{\sum_j{e^{x_j}}}, \dots,\frac{e^{x_n}}{\sum_j{e^{x_j}}}]$$。然而当输入$$\bold{x}$$ 中的某一项特别大的时候，exp算出来的值会溢出(inf)。</p>
-<p>因此在实现过程中，对softmax函数上下同时除以一个 $$e^{x_{max}}$$ ，可以避免溢出: </p>
-<h3 id="frac-e-x-0-sum-j-e-x-j-frac-e-x-0-x-max-sum-j-e-x-j-x-max"><a href="#frac-e-x-0-sum-j-e-x-j-frac-e-x-0-x-max-sum-j-e-x-j-x-max" class="headerlink" title="$$\frac{e^{x_0}}{\sum_{j}e^{x_j}}= \frac{e^{x_0-x_{max}}}{\sum_{j}e^{x_j-x_{max}}}$$"></a>$$\frac{e^{x_0}}{\sum_{j}e^{x_j}}= \frac{e^{x_0-x_{max}}}{\sum_{j}e^{x_j-x_{max}}}$$</h3><p>可以用下边代码测试。当输入在正常范围内的时候，两种方法的结果是相等的。当输入中包含有极大值的时候，softmax_origin函数会报错, 而softmax函数正常运行。</p>
+          <p>To avoid exp function overflow，we use the following tricks:</p>
+<p>Suppose input x is a vector : $$ \bold{x} = [x_0,x_1,…, x_n]$$，then original Softmax function should be: $$[\frac{e^{x_0}}{\sum_j{e^{x_j}}}, \dots,\frac{e^{x_n}}{\sum_j{e^{x_j}}}]$$. While when a certain entry of $$\bold{x}$$ are extremely bif，exp function will overflow(an you get a inf)。</p>
+<p>Therefore in practice，we devide the numerator and denominator of softmax function by $$e^{x_{max}}$$ to avoid overflow: </p>
+<h3 id="frac-e-x-0-sum-j-e-x-j-frac-e-x-0-x-max-sum-j-e-x-j-x-max"><a href="#frac-e-x-0-sum-j-e-x-j-frac-e-x-0-x-max-sum-j-e-x-j-x-max" class="headerlink" title="$$\frac{e^{x_0}}{\sum_{j}e^{x_j}}= \frac{e^{x_0-x_{max}}}{\sum_{j}e^{x_j-x_{max}}}$$"></a>$$\frac{e^{x_0}}{\sum_{j}e^{x_j}}= \frac{e^{x_0-x_{max}}}{\sum_{j}e^{x_j-x_{max}}}$$</h3><p>You can test with the following code。When you do not have extreme input, softmax and softmax_origin function return the same values。When you have a extreme input，softmax_origin will fail, while softmax works well。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">softmax</span>(<span class="params">x</span>):</span></span><br><span class="line">    max_ = np.<span class="built_in">max</span>(x)</span><br><span class="line">    x = x - max_</span><br><span class="line">    x_exp = np.exp(x)</span><br><span class="line">    x_sum = np.<span class="built_in">sum</span>(x_exp)</span><br><span class="line">    s = x_exp/x_sum</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">softmax_origin</span>(<span class="params">x</span>):</span></span><br><span class="line">    x_exp = np.exp(x)</span><br><span class="line">    x_sum = np.<span class="built_in">sum</span>(x_exp)</span><br><span class="line">    s = x_exp/x_sum</span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    x = np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;## Input x is &quot;</span>, x)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;original softmax: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(softmax_origin(x)))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;minus max version: &#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(softmax(x)))</span><br><span class="line">    x = np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">1000</span>, <span class="number">2000000</span>])</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;##Input x is &quot;</span>, x)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;original softmax: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(softmax_origin(x)))</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;minus max version: &#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(softmax(x)))</span><br></pre></td></tr></table></figure>
 
+<p>Implementation in CS224N Assignment2:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">softmax</span>(<span class="params">x</span>):</span></span><br><span class="line">  	<span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">  	Arguments:</span></span><br><span class="line"><span class="string">    x -- A D dimensional vector or N x D dimensional numpy matrix.</span></span><br><span class="line"><span class="string">  	orig_shape = x.shape</span></span><br><span class="line"><span class="string">  	&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(x.shape) &gt; <span class="number">1</span>:</span><br><span class="line">        <span class="comment"># Matrix</span></span><br><span class="line">        tmp = np.<span class="built_in">max</span>(x, axis=<span class="number">1</span>)</span><br><span class="line">        <span class="comment"># 为了避免求exp溢出，所以要减去最大值</span></span><br><span class="line">        x -= tmp.reshape((x.shape[<span class="number">0</span>], <span class="number">1</span>))</span><br><span class="line">        x = np.exp(x)</span><br><span class="line">        tmp = np.<span class="built_in">sum</span>(x, axis=<span class="number">1</span>)</span><br><span class="line">        x /= tmp.reshape((x.shape[<span class="number">0</span>], <span class="number">1</span>))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># Vector</span></span><br><span class="line">        tmp = np.<span class="built_in">max</span>(x)</span><br><span class="line">        x -= tmp</span><br><span class="line">        x = np.exp(x)</span><br><span class="line">        tmp = np.<span class="built_in">sum</span>(x)</span><br><span class="line">        x /= tmp</span><br><span class="line">    <span class="keyword">assert</span> x.shape == orig_shape</span><br><span class="line">    <span class="keyword">return</span> x</span><br></pre></td></tr></table></figure>
+      
+    </div>
 
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># CS224N Assignment2 中的实现：</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">softmax</span>(<span class="params">x</span>):</span></span><br><span class="line">  	<span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">  	Arguments:</span></span><br><span class="line"><span class="string">    x -- A D dimensional vector or N x D dimensional numpy matrix.</span></span><br><span class="line"><span class="string">  	orig_shape = x.shape</span></span><br><span class="line"><span class="string">  	&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(x.shape) &gt; <span class="number">1</span>:</span><br><span class="line">        <span class="comment"># Matrix</span></span><br><span class="line">        tmp = np.<span class="built_in">max</span>(x, axis=<span class="number">1</span>)</span><br><span class="line">        <span class="comment"># 为了避免求exp溢出，所以要减去最大值</span></span><br><span class="line">        x -= tmp.reshape((x.shape[<span class="number">0</span>], <span class="number">1</span>))</span><br><span class="line">        x = np.exp(x)</span><br><span class="line">        tmp = np.<span class="built_in">sum</span>(x, axis=<span class="number">1</span>)</span><br><span class="line">        x /= tmp.reshape((x.shape[<span class="number">0</span>], <span class="number">1</span>))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># Vector</span></span><br><span class="line">        tmp = np.<span class="built_in">max</span>(x)</span><br><span class="line">        x -= tmp</span><br><span class="line">        x = np.exp(x)</span><br><span class="line">        tmp = np.<span class="built_in">sum</span>(x)</span><br><span class="line">        x /= tmp</span><br><span class="line">    <span class="keyword">assert</span> x.shape == orig_shape</span><br><span class="line">    <span class="keyword">return</span> x</span><br></pre></td></tr></table></figure>
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2019/12/22/Lanague-and-The-World/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jiahaoliu1891">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mind & Programming">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/22/Lanague-and-The-World/" class="post-title-link" itemprop="url">Language and The World</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-12-22 17:13:13" itemprop="dateCreated datePublished" datetime="2019-12-22T17:13:13-05:00">2019-12-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-11-03 06:58:29" itemprop="dateModified" datetime="2020-11-03T06:58:29-05:00">2020-11-03</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Nowadays Deep Learning models (such as Bert) have largely promoted the development of Natural Language Processing. The main idea is to learn language model from large corpus. Despite the great success on many different NLP tasks, such as QA, deep learning models still fail to really <strong>understand</strong> human language. The thought experiment <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Chinese_room">“Chinese Room”</a> tells why.</p>
+<p>In my opinion, people learn language by understanding the world. In human’s mind, we have a model for language, and also a model for the physical and mental world. Just as the introduction of Knowledge Graph from Google:</p>
+<blockquote>
+<p>“things not strings”.</p>
+</blockquote>
+<p>Generally speaking, learning a language is equivalent to developing a understanding of the world. <strong>Grounding</strong> symbols into real world objects is a prerequisite for natural language understanding, which is a step towards human-level intelligence or say AGI.</p>
+<p><em>Key words</em>: Symbolic Grounding, Natural Language Grounding, World Model, Embodied Learning, Cognitive Linguistic</p>
+<h3 id="Papers"><a href="#Papers" class="headerlink" title="Papers:"></a>Papers:</h3><h4 id="Language-Grounding-in-Virtual-World"><a href="#Language-Grounding-in-Virtual-World" class="headerlink" title="Language Grounding in Virtual World"></a>Language Grounding in Virtual World</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://research.fb.com/publications/why-build-an-assistant-in-minecraft/"><strong>Why Build an Assistant in Minecraft?</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1810.08272.pdf"><strong>BabyAI: First Steps Towards Grounding Language Learning With A Human In The Loop</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://apps.dtic.mil/dtic/tr/fulltext/u2/a289894.pdf"><strong>A Computational Theory of Grounding in Natural Language Conversation</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1912.05877.pdf"><strong>Extending Machine Language Models toward Human-Level Language Understanding</strong></a></li>
+</ul>
+<h4 id="Visual-Question-Answering-Multimodal-ML"><a href="#Visual-Question-Answering-Multimodal-ML" class="headerlink" title="Visual Question Answering / Multimodal ML"></a>Visual Question Answering / Multimodal ML</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://www.aclweb.org/anthology/N16-1019.pdf"><strong>Grounded Semantic Role Labeling</strong></a></li>
+<li><a href=""><strong>Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1904.11574.pdf"><strong>TVQA+: Spatio-Temporal Grounding for Video Question Answering</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://visualgenome.org/"><strong>Visual Genome</strong></a></li>
+</ul>
+<h4 id="Neural-Symbolic-Methods"><a href="#Neural-Symbolic-Methods" class="headerlink" title="Neural-Symbolic Methods"></a>Neural-Symbolic Methods</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1609.05518.pdf"><strong>Towards Deep Symbolic Reinforcement Learning</strong></a></li>
+</ul>
+<h4 id="Compositional-and-disentangled-representations"><a href="#Compositional-and-disentangled-representations" class="headerlink" title="Compositional and disentangled representations"></a>Compositional and disentangled representations</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S2352154618301943"><strong>Reconciling deep learning with symbolic artiﬁcial intelligence: representing objects and relations</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://pdfs.semanticscholar.org/a902/26c41b79f8b06007609f39f82757073641e2.pdf"><strong>β-VAE: LEARNING BASIC VISUAL CONCEPTS WITH A CONSTRAINED VARIATIONAL FRAMEWORK</strong></a></li>
+</ul>
+<h4 id="Cognitive-Science"><a href="#Cognitive-Science" class="headerlink" title="Cognitive Science"></a>Cognitive Science</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://eprints.soton.ac.uk/250382/1/symgro.pdf"><strong>THE SYMBOL GROUNDING PROBLEM</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://plato.stanford.edu/entries/modularity-mind/#WhatMentModu"><strong>Modularity of Mind</strong></a></li>
+<li><a target="_blank" rel="noopener" href="http://www.subcortex.com/PrinzModularity.pdf"><strong>Is the mind really modular?</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1604.00289.pdf"><strong>Building Machines That Learn and Think Like People</strong></a></li>
+</ul>
+<h3 id="Courses"><a href="#Courses" class="headerlink" title="Courses:"></a>Courses:</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://katefvision.github.io/LanguageGrounding/#readings"><strong>Language Grounding to Vision and Control</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cs.utexas.edu/~mooney/gnlp/"><strong>Grounded Natural Language Processing</strong></a></li>
+<li><a target="_blank" rel="noopener" href="http://www.cs.unc.edu/~mbansal/teaching/robonlp-seminar-spring17.html"><strong>Grounded Language for Robotics</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av33658267/?spm_id_from=333.788.videocard.12"><strong>乔治·莱考夫认知语言学十讲</strong></a></li>
+</ul>
+<h3 id="Books"><a href="#Books" class="headerlink" title="Books:"></a>Books:</h3><ul>
+<li><strong>Metaphors We Live by</strong></li>
+</ul>
+<h3 id="Workshops"><a href="#Workshops" class="headerlink" title="Workshops:"></a>Workshops:</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.visionmeetscognition.org/"><strong>Vision Meets Cognition</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://sites.google.com/view/continual2018/home"><strong>Continual learning Workshop</strong></a></li>
+</ul>
+<h3 id="Web"><a href="#Web" class="headerlink" title="Web:"></a>Web:</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.jiqizhixin.com/articles/2016-05-07-3"><strong>人工智能若想取得突破，需要认知科学和工程学的联姻</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.yangzhiping.com/info/resources.html"><strong>计算认知科学优质资源</strong></a> <em><strong>(IMPORTANT!)</strong></em></li>
+<li><a target="_blank" rel="noopener" href="https://neu-reality.com/"><strong>Neureality</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=cWzi38-vDbE"><strong>Yann LeCun - How does the brain learn so much so quickly?</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=rTawFwUvnLE"><strong>What is wrong with convolutional neural nets</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av67433567/"><strong>构建AGI的系统神经科学方法 Demis Hassabis</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/272399579"><strong>Sam Gershman给计算神经科学初学者的建议</strong></a></li>
+</ul>
+<h3 id="Tutorial"><a href="#Tutorial" class="headerlink" title="Tutorial:"></a>Tutorial:</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://slideslive.com/38917403/causal-inference-and-stable-learning"><strong>ICML 2019 Causality</strong></a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=FtUbMG3rlFs"><strong>FROM SYSTEM 1 DEEP LEARNING TO SYSTEM 2 DEEP LEARNING</strong></a></li>
+</ul>
+<h3 id="Tasks"><a href="#Tasks" class="headerlink" title="Tasks:"></a>Tasks:</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://vlomonaco.github.io/core50/"><strong>Continual Learning and Object Recognition, Detection, Segmentation</strong></a></li>
+</ul>
+<h3 id="Active-Researchers"><a href="#Active-Researchers" class="headerlink" title="Active Researchers:"></a>Active Researchers:</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://georgelakoff.com/">George Lakoff</a> (UCB)</li>
+<li><a target="_blank" rel="noopener" href="http://www.cs.unc.edu/~mbansal/prospective-students.html">Mohit Bansal</a> (UNC)</li>
+<li><a target="_blank" rel="noopener" href="https://igorlabutov.com/">Igor Labutov</a> (LAER AI)</li>
+<li><a target="_blank" rel="noopener" href="http://www.cs.cmu.edu/~bishan/">Bishan Yang</a> (LAER AI)</li>
+<li><a target="_blank" rel="noopener" href="https://mila.quebec/en/yoshua-bengio/">Yoshua Bengio</a> (MILA)</li>
+<li><a target="_blank" rel="noopener" href="http://www.cse.msu.edu/~jchai/">Joyce Y. Chai</a> (Umich)</li>
+<li><a target="_blank" rel="noopener" href="http://people.ict.usc.edu/~traum/">David Traum</a>(USC)</li>
+<li><a target="_blank" rel="noopener" href="https://www.cs.utexas.edu/users/mooney/">Raymond J. Mooney</a>(UTA)</li>
+<li><a target="_blank" rel="noopener" href="https://yonatanbisk.com/">Yonatan Bisk</a>(CMU)</li>
+<li><a target="_blank" rel="noopener" href="https://www.martagarnelo.com/">Marta Garnelo</a>(DeepMind)</li>
+<li><a target="_blank" rel="noopener" href="https://www.cs.utexas.edu/~ring/">Mark B. Ring</a></li>
+<li><a target="_blank" rel="noopener" href="http://jiayuanm.com/">Jiayuan Mao</a></li>
+</ul>
+
       
     </div>
 
@@ -1247,9 +389,6 @@
   </div>
 
   
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
-  </nav>
 
 
 
@@ -1314,7 +453,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
